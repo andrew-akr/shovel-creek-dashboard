@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shovel Creek + Delta Wind — Member Benefit Analysis · Alaska Renewables</title>
+<title>Shovel Creek + Delta Wind · Member Benefit Analysis · Alaska Renewables</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -124,7 +124,7 @@
 
   /* results */
   .result-hero{padding:22px 22px 18px;background:linear-gradient(135deg,#0a3a64,#0b5394);border-radius:var(--r) var(--r) 0 0;color:#eaf4fb}
-  .result-hero .k{font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;opacity:.85}
+  .result-hero .k{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;opacity:.95}
   .bignum{font-size:54px;font-weight:800;line-height:1;margin:8px 0 2px;letter-spacing:-.02em;display:flex;align-items:baseline;gap:10px}
   .bignum .unit{font-size:18px;font-weight:650;opacity:.9}
   .bignum.save{color:#7ef0b0}
@@ -134,6 +134,8 @@
   .scenario-line b{color:var(--ink)}
 
   .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-bottom:1px solid var(--line)}
+  .metrics-note{font-size:11.5px;line-height:1.5;color:var(--muted);padding:10px 16px;border-bottom:1px solid var(--line);background:#f6faf8}
+  .metrics-note b{color:var(--green)}
   .metric{padding:14px 16px;border-right:1px solid var(--line)}
   .metric:last-child{border-right:0}
   .metric .m-k{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
@@ -148,6 +150,40 @@
   .chart-title{font-size:14px;font-weight:700;margin:0 0 2px}
   .chart-sub{font-size:12px;color:var(--muted);margin:0 0 8px}
   svg{display:block;width:100%;height:auto;overflow:visible}
+  /* operational results table */
+  .ops-panel{margin-top:20px}
+  .ops-wrap{overflow-x:auto}
+  .ops-tbl{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}
+  .ops-tbl th{text-align:right;font-weight:600;color:var(--muted);padding:5px 9px;border-bottom:1px solid var(--line);font-size:10px;text-transform:uppercase;letter-spacing:.03em;line-height:1.2;white-space:nowrap}
+  .ops-tbl th:first-child{text-align:left}
+  .ops-tbl td{text-align:right;padding:5px 9px;border-bottom:1px solid #f0f4f8;white-space:nowrap}
+  .ops-tbl td.u{text-align:left;font-weight:650;color:var(--ink);white-space:normal;min-width:132px;line-height:1.25}
+  .ops-tbl tr:hover td{background:#f6f9fc}
+  .ops-d.dn{color:var(--green-d);font-weight:600} .ops-d.up{color:#b5562f;font-weight:600} .ops-d0{color:#c0ccd6}
+  .ops-takeaway{margin:14px 0 0;font-size:12.5px;line-height:1.55;color:var(--ink2);background:#eef7f1;border:1px solid #cfe8da;border-left:4px solid var(--green);border-radius:10px;padding:11px 14px}
+  .ops-takeaway b{color:var(--green-d)}
+
+  /* Benefits to Southcentral Alaska */
+  .sc-panel{margin-top:20px;background:linear-gradient(160deg,#0a3a64,#0c2740);border-radius:18px;box-shadow:var(--shadow);color:#dbe9f3;padding:24px 26px 26px}
+  .sc-panel .eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#7fc9e6}
+  .sc-panel h2{color:#fff;font-size:22px;margin:8px 0 4px;letter-spacing:-.01em;text-transform:none}
+  .sc-panel .lede{color:#b9d2e2;font-size:14px;max-width:900px;margin:0 0 18px;line-height:1.55}
+  .sc-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:6px}
+  .sc-tile{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:13px;padding:15px 16px}
+  .sc-tile .k{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#9fbed1}
+  .sc-tile .v{font-size:26px;font-weight:800;color:#7fe3b4;margin-top:5px;line-height:1.05}
+  .sc-tile .s{font-size:11.5px;color:#9fbed1;margin-top:4px}
+  .sc-slider{margin:16px 0 4px;max-width:520px}
+  .sc-slider .ctl-label{display:flex;justify-content:space-between;align-items:baseline;font-weight:650;font-size:13.5px;margin-bottom:6px;color:#eaf4fb}
+  .sc-slider .ctl-label .val{font-weight:800;color:#7fe3b4}
+  .sc-slider input[type=range]{width:100%;accent-color:#7fe3b4}
+  .sc-slider .ticks{display:flex;justify-content:space-between;font-size:11px;color:#9fbed1;margin-top:-2px}
+  .sc-explain{margin-top:16px;background:rgba(255,255,255,.05);border-radius:12px;padding:14px 16px}
+  .sc-explain h3{color:#fff;font-size:14px;margin:0 0 6px}
+  .sc-explain p{margin:0 0 8px;font-size:12.5px;line-height:1.6;color:#c3d6e4}
+  .sc-explain p:last-child{margin-bottom:0}
+  .sc-explain b{color:#eaf4fb}
+  @media(max-width:900px){.sc-tiles{grid-template-columns:1fr}}
 
   .note{font-size:11.5px;color:var(--muted)}
   details.method{margin-top:20px;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
@@ -155,6 +191,10 @@
   details.method .pad{padding:0 18px 18px;font-size:13px;color:var(--ink2)}
   details.method li{margin-bottom:6px}
   .foot{margin-top:18px;font-size:11.5px;color:var(--muted);text-align:center}
+  .site-footer{margin-top:22px;padding:18px 20px 6px;text-align:center;border-top:1px solid var(--line)}
+  .site-footer .wip{font-size:13px;color:var(--ink2);margin:0 auto 8px;max-width:640px;line-height:1.55}
+  .site-footer .wip a{color:var(--green-d);font-weight:600}
+  .site-footer .updated{font-size:11.5px;color:var(--muted);margin:0}
   .disabled{opacity:.45}
   .sell-note{font-size:11px;color:var(--blue-d);background:#eef5fb;border:1px solid #cfe2f0;border-radius:8px;padding:7px 9px;margin-top:8px}
   .sell-note.hidden{display:none}
@@ -208,9 +248,8 @@
 
   <header class="top">
     <div style="flex:1;min-width:260px">
-      <h1>Shovel Creek Wind could save GVEA members money</h1>
-      <p class="sub">When paired with the implementation of several proven commercial and operational strategies,
-        Shovel Creek Wind could save GVEA members money by displacing generation from expensive and volatile diesel and naphtha fuels.</p>
+      <h1>Shovel Creek Wind could lower Alaska utility bills</h1>
+      <p class="sub">When paired with several proven commercial and operational strategies, Shovel Creek Wind could save GVEA members money by displacing generation from expensive, volatile diesel and naphtha fuels. It would also diversify the Railbelt's energy supply while reducing its greenhouse gas emissions and environmental impact. Its surplus energy can flow south to offset scarce Cook Inlet natural gas in Southcentral, lowering costs for utilities across the Railbelt and, through the Power Cost Equalization program, for rural communities statewide.</p>
     </div>
   </header>
 
@@ -219,14 +258,15 @@
       <h4>About this analysis</h4>
       <p>The purpose of this study is to advance our understanding of the economic impact of wind energy on GVEA's
         system, and to identify the best opportunities to save members money under a wide variety of potential
-        scenarios. <b>Shovel Creek Wind</b> is a project originated by Alaska Renewables, and now owned by a nationally
-        recognized investor / developer / owner / operator. This economic analysis was <b>developed solely by Alaska
-        Renewables</b> using publicly available fuel and generation cost information filed by GVEA with the Regulatory
+        scenarios. Shovel Creek Wind is a project originated by Alaska Renewables, and now owned by a nationally
+        recognized investor / developer / owner / operator. This economic analysis was developed solely by Alaska
+        Renewables using publicly available fuel and generation cost information filed by GVEA with the Regulatory
         Commission of Alaska, as well as publicly available wind resource data collected with funding from the
-        <b>Alaska Energy Authority (AEA)</b>. It is <b>not a study by GVEA or the current project owner</b>. Alaska
+        Alaska Energy Authority (AEA). It is not a study by GVEA or the current project owner. Alaska
         Renewables built a custom dispatch model of GVEA's system and analyzed the operation and economics of hundreds
-        of scenarios to compile these interactive results. The results assume <b>no federal tax credits</b> for Shovel
+        of scenarios to compile these interactive results. The results assume no federal tax credits for Shovel
         Creek wind.</p>
+      <p>A prior Railbelt-wide study by Energy and Environmental Economics (E3), <a href="https://www.ethree.com/wind-alaska-railbelt/" target="_blank" rel="noopener">Integrating Wind Energy in Alaska's Railbelt</a>, reinforces these approaches and benefits, finding that the grid can reliably absorb large amounts of wind while cutting annual operating costs by roughly $100 million and lowering system-wide CO₂ emissions by about 25%.</p>
     </div>
   </div>
 
@@ -246,6 +286,13 @@
         </div>
 
         <div class="ctl">
+          <div class="toggle-row">
+            <span>Include Delta Junction Wind (36 MW)<span class="info">i<span class="pop">The proposed <b>36&nbsp;MW Delta Junction Wind</b> project, added to the <b>tested scenario</b> alongside Shovel Creek; it is <b>not</b> part of the base case. <b>On:</b> results show Shovel Creek <b>plus</b> 36 MW of Delta Junction wind, at whatever enabler and base-case settings you choose (all enabler levels and both base cases were modeled).</span></span></span>
+            <label class="switch"><input type="checkbox" id="delta"><span class="slide"></span></label>
+          </div>
+        </div>
+
+        <div class="ctl">
           <div class="ctl-label">BESS capacity <span class="val" id="bessVal">25 MW</span></div>
           <input type="range" id="bess" min="0" max="2" step="1" value="2">
           <div class="ticks"><span>0 MW<br>No BESS</span><span>10 MW</span><span>25 MW</span></div>
@@ -255,7 +302,7 @@
 
         <div class="ctl">
           <div class="subcat">Operational</div>
-          <div class="subcat-note">regulation upgrades — selecting one auto-selects what it needs</div>
+          <div class="subcat-note">regulation upgrades; selecting one auto-selects what it needs</div>
 
           <label class="enabler" id="e_zhender">
             <input type="checkbox" id="zhender">
@@ -285,7 +332,7 @@
 
           <label class="enabler comm" id="e_sell">
             <input type="checkbox" id="sell">
-            <span class="txt"><b>Sell surplus energy to Southcentral<span class="info">i<span class="pop"><b>Surplus-wind sales:</b> "surplus wind" is wind that's available but can't be used on GVEA's system in that hour, so it would otherwise be spilled (curtailed). Instead of spilling it, GVEA exports it to Southcentral utilities and earns revenue. Revenue is computed directly from each scenario's spilled wind (surplus MWh × the sale price), validated against the model's own sale results. <b>Note:</b> the operational enablers reduce how much wind is spilled, so these sales are <b>worth more when fewer operational enablers run</b> — there's more surplus to sell. <b>Common practice:</b> economy energy sales between interconnected utilities are routine.</span></span></b><small>Export otherwise-spilled wind to the Southcentral grid</small></span>
+            <span class="txt"><b>Sell surplus energy to Southcentral<span class="info">i<span class="pop"><b>Surplus-wind sales:</b> "surplus wind" is wind that's available but can't be used on GVEA's system in that hour, so it would otherwise be spilled (curtailed). Instead of spilling it, GVEA exports it to Southcentral utilities and earns revenue. Revenue is computed directly from each scenario's spilled wind (surplus MWh × the sale price), validated against the model's own sale results. <b>Note:</b> the operational enablers reduce how much wind is spilled, so these sales are <b>worth more when fewer operational enablers run</b>, since there's more surplus to sell. <b>Common practice:</b> economy energy sales between interconnected utilities are routine.</span></span></b><small>Export otherwise-spilled wind to the Southcentral grid</small></span>
           </label>
 
           <div style="margin-top:14px">
@@ -299,17 +346,9 @@
 
         <div class="ctl">
           <div class="toggle-row">
-            <span>New LM6000 in base case<span class="info">i<span class="pop">GVEA is considering the purchase of a <b>new LM6000 turbine</b> at the North Pole Combined Cycle Plant, which would add firm capacity, improve system efficiency, and reduce its dependence on diesel. <b>Default (ON):</b> results are measured against a base case that includes this turbine (but does not include its capital costs — only the system operational costs). <b>Off:</b> the base case keeps today's units only. Without the new LM6000 the base case system leans harder on diesel.</span></span></span>
+            <span>New LM6000 in base case<span class="info">i<span class="pop">GVEA is considering the purchase of a <b>new LM6000 turbine</b> at the North Pole Combined Cycle Plant, which would add firm capacity, improve system efficiency, and reduce its dependence on diesel. <b>Default (ON):</b> results are measured against a base case that includes this turbine (but does not include its capital costs, only the system operational costs). <b>Off:</b> the base case keeps today's units only. Without the new LM6000 the base case system leans harder on diesel.</span></span></span>
             <label class="switch"><input type="checkbox" id="lm6000" checked><span class="slide"></span></label>
           </div>
-        </div>
-
-        <div class="ctl">
-          <div class="toggle-row">
-            <span>Include Delta Wind (36 MW) in base case<span class="info">i<span class="pop">A few scenarios were run with the proposed <b>36&nbsp;MW Delta Wind</b> project added alongside Shovel Creek. <b>On:</b> results show Shovel Creek <b>plus</b> 36 MW of Delta Wind. Only the <b>full complement of enablers</b> with the <b>new-LM6000 base case</b> was modeled for Delta, so those settings are locked on while this is enabled.</span></span></span>
-            <label class="switch"><input type="checkbox" id="delta"><span class="slide"></span></label>
-          </div>
-          <div class="sell-note hidden" id="deltaNote">Delta scenarios use the full enabler suite and the new-LM6000 base case, so those controls are locked.</div>
         </div>
 
         <div class="ctl">
@@ -347,7 +386,7 @@
         <div class="metric">
           <div class="m-k">Member savings</div>
           <div class="m-v" id="m_year">$14.3 M/yr</div>
-          <div class="m-s">vs. system without Shovel Creek</div>
+          <div class="m-s">GVEA system, vs. today</div>
         </div>
         <div class="metric">
           <div class="m-k">Oil displaced</div>
@@ -355,16 +394,17 @@
           <div class="m-s">diesel + naphtha + LSR</div>
         </div>
         <div class="metric">
-          <div class="m-k">Rate reduction</div>
-          <div class="m-v" id="m_rate">1.01 ¢/kWh</div>
-          <div class="m-s">system net generation cost</div>
-        </div>
-        <div class="metric">
-          <div class="m-k">Typical home</div>
-          <div class="m-v" id="m_home">$5.55 /mo</div>
+          <div class="m-k">Annual Residential Member Savings</div>
+          <div class="m-v" id="m_home">$66 /yr</div>
           <div class="m-s">at <input class="home-input" id="kwh" type="number" value="581" min="0" step="25"> kWh/mo</div>
         </div>
+        <div class="metric">
+          <div class="m-k">Emissions reduced</div>
+          <div class="m-v pos" id="m_co2">— tons CO₂e/yr</div>
+          <div class="m-s"><span id="m_co2pct">—</span> below GVEA's total, vs. today</div>
+        </div>
       </div>
+      <p class="metrics-note">Emissions are estimated from each unit's modeled fuel use and typical plant heat rates, using standard fuel CO₂ factors (distillate, naphtha/LSR and coal). Beyond the environmental benefit, cutting emissions is an important way for GVEA to <b>unlock a large share of federal funding under its already-awarded USDA New ERA grant</b>.</p>
 
       <div class="charts">
         <div class="chart-block">
@@ -377,7 +417,7 @@
         </div>
         <div class="chart-block">
           <p class="chart-title">Benefit builds as enablers are added</p>
-          <p class="chart-sub">Rate reduction (¢/kWh) at the current wind size, fuel price and BESS-cost setting — bars to the right are savings. Your selection is highlighted.</p>
+          <p class="chart-sub">Rate reduction (¢/kWh) at the current wind size, fuel price and BESS-cost setting; bars to the right are savings. Your selection is highlighted.</p>
           <svg id="chartLadder" viewBox="0 0 620 232" role="img"></svg>
         </div>
         <div class="chart-block">
@@ -389,14 +429,48 @@
     </main>
   </div>
 
+  <!-- ============ OPERATIONAL RESULTS (full width) ============ -->
+  <section class="panel ops-panel">
+    <div class="pad">
+      <p class="chart-title" style="font-size:16px;margin-bottom:3px">Operational results: how GVEA dispatch changes</p>
+      <p class="chart-sub"><b>Annual</b> change in each of GVEA's oil-fired power plants' dispatch, by unit, versus today's system (no Shovel Creek, no Delta, no enablers), at the modeled base fuel price. Output, hours online and starts are per year; <b>Δ</b> = this scenario minus today, and a reduction (green) means the unit runs less.</p>
+      <div class="ops-wrap"><div id="opsTable"></div></div>
+      <p class="ops-takeaway"><b>Take-home:</b> adding wind sharply cuts the oil burned in GVEA's turbines <i>and</i> the hours those units run, directly lowering fuel and maintenance costs. Some units do see <b>more starts</b>; note, however, that this model did not attempt to minimize starts. More sophisticated dispatch forecasting and operational approaches could substantially reduce that cycling if increased starts prove to be a meaningful O&amp;M concern. GVEA could also <b>procure flexible regulation services from efficient Southcentral gas plants</b> instead of cycling its own oil units, a lower-cost path to integrating wind that further eases strain on GVEA's oil-based generators (see <i>Benefits to Southcentral Alaska</i> below).</p>
+    </div>
+  </section>
+
+  <!-- ============ BENEFITS TO SOUTHCENTRAL ALASKA ============ -->
+  <section class="sc-panel">
+    <div class="eyebrow">Benefits to Southcentral Alaska</div>
+    <h2>Interior wind can offset scarce Cook Inlet natural gas</h2>
+    <p class="lede">Surplus wind generated in the Interior, energy GVEA can't use in the moment, can flow south over the Railbelt intertie and displace natural gas burned in Southcentral power plants. As Cook Inlet gas runs short and utilities turn to costly imported LNG, every avoided unit of gas matters for the whole grid.</p>
+    <div class="sc-tiles">
+      <div class="sc-tile"><div class="k">Surplus wind exported</div><div class="v" id="sc_mwh">— GWh/yr</div><div class="s">excess Interior wind sent south</div></div>
+      <div class="sc-tile"><div class="k">Natural gas avoided</div><div class="v" id="sc_bcf">— BCF/yr</div><div class="s">at a ~50%-efficient LM6000 combined cycle</div></div>
+      <div class="sc-tile"><div class="k">Southcentral gas-cost avoided</div><div class="v" id="sc_save">$— M/yr</div><div class="s">gross value of imported LNG not burned; fuel only, before the cost of supplying the wind</div></div>
+    </div>
+    <div class="sc-slider">
+      <div class="ctl-label">Imported LNG price <span class="val" id="sc_lngVal">$20 /MCF</span></div>
+      <input type="range" id="lngPrice" min="12" max="25" step="0.5" value="20">
+      <div class="ticks"><span>$12<br>Cook Inlet-era</span><span>$20</span><span>$25<br>imported LNG</span></div>
+    </div>
+    <div class="sc-explain">
+      <h3>Why this matters across the Railbelt, and beyond</h3>
+      <p>For decades, GVEA and the Interior imported low-cost, gas-fired power from Southcentral utilities across the Alaska Intertie. The <b>decline of Cook Inlet natural gas</b> has brought that practice to a near halt: Southcentral utilities face a supply shortfall as early as <b>2027</b> and are preparing to import <b>liquefied natural gas (LNG)</b> at a delivered cost several times the historical Cook Inlet price.</p>
+      <p>Wind built in the Interior can flip that flow. Surplus generation can move south to <b>offset gas demand in Southcentral</b>, stretching remaining Cook Inlet reserves, reducing the volume of expensive LNG that must be imported, and helping lower costs for <b>every Railbelt utility and its ratepayers</b>.</p>
+      <p>The intertie can also carry a <b>two-way partnership</b>. Rather than cycling its own oil-fired units to balance wind, GVEA could <b>procure flexible regulation services from efficient Southcentral gas plants</b>, a lower-cost way to integrate wind into the Railbelt that eases wear on GVEA's oil generators and saves members money. For Southcentral utilities, it is a chance to <b>better recover costs from the flexible, efficient units they already own</b>, turning idle capacity into revenue.</p>
+      <p>Those benefits reach beyond the road system. Alaska's <b>Power Cost Equalization (PCE)</b> program keeps electricity affordable for roughly <b>200 rural communities and 82,000 residents</b>, and was created so rural Alaskans share in the same energy investments that lower costs on the Railbelt. A stronger, lower-cost Railbelt supports the broader statewide energy economy, and the communities PCE serves.</p>
+    </div>
+  </section>
+
   <!-- ============ EXECUTIVE SUMMARY ============ -->
   <section class="exec">
     <div class="eyebrow">Executive summary</div>
     <h2>Wind plus proven enablers is projected to lower costs for GVEA and its members</h2>
     <p class="lede">By implementing various proven commercial and operational tools, GVEA can use wind energy from Shovel
-      Creek to displace expensive oil generation — saving members money, especially in times of average or
-      higher-than-average oil prices. Even with the largest Shovel Creek size — and even when the 36&nbsp;MW Delta Wind
-      project is added — wind supplies only about <b>18–22% of GVEA's generation mix</b>, leaving ample room to procure
+      Creek to displace expensive oil generation, saving members money, especially in times of average or
+      higher-than-average oil prices. Even with the largest Shovel Creek size, and even when the 36&nbsp;MW Delta Wind
+      project is added, wind supplies only about <b>18–22% of GVEA's generation mix</b>, leaving ample room to procure
       large shares of other low-cost fuel or generation resources should new opportunities arise in the future.</p>
 
     <p class="exec-hint">▸ Click <b>Load this scenario</b> on any finding to set the controls above to match it.</p>
@@ -418,14 +492,14 @@
       <div class="finding">
         <div class="fn">3</div>
         <h3>Displaces expensive oil</h3>
-        <p>Proven commercial and operational tools let wind displace costly diesel, naphtha and LSR generation — the savings grow as oil prices rise.</p>
+        <p>Proven commercial and operational tools let wind displace costly diesel, naphtha and LSR generation; the savings grow as oil prices rise.</p>
         <div class="stat" id="f3stat">14 M gal/yr</div>
         <button class="finding-btn" onclick="applyFinding(25)">Load this scenario ▸</button>
       </div>
       <div class="finding warn">
         <div class="fn">4</div>
         <h3>Marginal at low forecast prices</h3>
-        <p>At the prior EIA fuel-price forecast — about $12/MMBtu, developed in 2025 for 2030 — even the <b>smallest project (68 MW)</b> with the full enabler complement is marginal, slightly raising costs. That EIA forecast sits well below GVEA's historical fuel costs since 2000 (in 2025 dollars), so the economics improve markedly as prices return toward historical norms.</p>
+        <p>At the prior EIA fuel-price forecast (about $12/MMBtu, developed in 2025 for 2030), even the <b>smallest project (68 MW)</b> with the full enabler complement is marginal, slightly raising costs. That EIA forecast sits well below GVEA's historical fuel costs since 2000 (in 2025 dollars), so the economics improve markedly as prices return toward historical norms.</p>
         <div class="stat" id="f4stat">≈ –0.5 ¢/kWh at $12</div>
         <button class="finding-btn" onclick="applyFinding(12, 68)">Load this scenario ▸</button>
       </div>
@@ -448,35 +522,41 @@
       <ul>
         <li><b>What's shown:</b> the change in <i>total system net generation cost</i> from adding Shovel Creek Wind plus the selected enablers, versus today's system <b>without</b> Shovel Creek. Modeled in $/MWh and converted to retail rate impact at <b>1 $/MWh = 0.1 ¢/kWh</b>. Negative = lower rates (savings).</li>
         <li><b>Fuel price:</b> the slider sets both diesel (oil) and naphtha price together, spanning the historical range <b>$6–$52/MMBtu</b>. The model was run at $10, 20, 25, 30, 40, 50/MMBtu; values are linearly interpolated between those points and linearly extrapolated to the $6 and $52 ends. Markers: $6 historical min, $12 = a prior EIA price forecast, $25 historical average, <b>$38 = GVEA's filed cost for June 2026</b>, $52 historical max. Coal ($4.30/MMBtu) and low-sulfur residual ($19/MMBtu) are held fixed.</li>
-        <li><b>Operational ladder:</b> the modeled regulation configurations are nested — 0 MW BESS (no enablers, or Zehnder offline only) → 10 MW BESS (Zehnder offline + backup) → 25 MW BESS (+ NPSC backup) → (+ real-time regulation sizing). Controls snap to these modeled combinations.</li>
+        <li><b>Operational ladder:</b> the modeled regulation configurations are nested: 0 MW BESS (no enablers, or Zehnder offline only) → 10 MW BESS (Zehnder offline + backup) → 25 MW BESS (+ NPSC backup) → (+ real-time regulation sizing). Controls snap to these modeled combinations.</li>
         <li><b>Battery (BESS) cost:</b> the battery used by the operational enablers is treated as a commercial BESS-capacity offering through Shovel Creek Wind, not a project capital cost. GVEA's proposed 46&nbsp;MW PACE-funded battery is expected to be built independently, so by default <b>no BESS cost is assigned to the project</b>. The toggle "BESS capacity at no cost to the project" lets you instead place a stand-alone capacity charge on the project.</li>
-        <li><b>Enablers are grouped as operational vs. commercial.</b> The <b>operational</b> enablers (regulation upgrades) form a chain — each was only modeled on top of the previous one, and each physically builds on it (backup regulation needs a regulation-capable unit and a BESS buffer; NPSC backup is modeled in addition to Zehnder backup; real-time sizing refines the backup logic). The <b>commercial</b> enabler (excess wind sales) is independent and on by default.</li>
+        <li><b>Enablers are grouped as operational vs. commercial.</b> The <b>operational</b> enablers (regulation upgrades) form a chain: each was only modeled on top of the previous one, and each physically builds on it (backup regulation needs a regulation-capable unit and a BESS buffer; NPSC backup is modeled in addition to Zehnder backup; real-time sizing refines the backup logic). The <b>commercial</b> enabler (excess wind sales) is independent and on by default.</li>
         <li><b>Surplus-wind sales (computed):</b> "surplus wind" is wind that's available but can't be used on GVEA's system in the hour, so it would otherwise be spilled (curtailed). Revenue = each scenario's <b>surplus wind (MWh) × the sale price</b> (default 10 ¢/kWh; adjustable 5–15 ¢/kWh), divided by system energy to express as a rate reduction. At 7.5 ¢/kWh ($75/MWh) this reproduces the model's own full-stack sale result exactly, and the same method is applied at every operational level. Because the operational enablers reduce how much wind is spilled, <b>standalone sales are worth more with fewer enablers running</b>. Sales revenue scales with the price and is independent of fuel price and the BESS-cost setting; the surplus volume comes from the model's dispatch.</li>
         <li><b>Note on 20 MW BESS:</b> a 20 MW step exists in the underlying model but was only run at a single fuel price, so it cannot respond to the price slider; the price-sensitive view uses 0 / 10 / 25 MW.</li>
         <li><b>Member savings ($/yr):</b> rate reduction ($/MWh) × the scenario's total annual system net energy (≈ 1.41 million MWh from the model). Tracks fuel price through the rate reduction.</li>
-        <li><b>Oil displaced (gallons/yr):</b> the reduction in liquid-fuel burn (diesel + naphtha + LSR) versus the current system without Shovel Creek. Energy densities from GVEA's 2025 RCA filing — diesel 128,422 Btu/gal; naphtha &amp; LSR 102,268 Btu/gal. Generation mix and fuel volumes come from the model's dispatch run and respond to wind size and enablers (the dispatch mix is largely set by regulation capability, not by fuel price).</li>
+        <li><b>Oil displaced (gallons/yr):</b> the reduction in liquid-fuel burn (diesel + naphtha + LSR) versus the current system without Shovel Creek. Energy densities from GVEA's 2025 RCA filing: diesel 128,422 Btu/gal; naphtha &amp; LSR 102,268 Btu/gal. Generation mix and fuel volumes come from the model's dispatch run and respond to wind size and enablers (the dispatch mix is largely set by regulation capability, not by fuel price).</li>
+        <li><b>Emissions reduced (tCO₂e/yr):</b> the drop in annual CO₂-equivalent emissions versus the current system without Shovel Creek. Each unit's modeled fuel use is combined with standard EPA CO₂ factors (distillate 73.96, naphtha/LSR ≈68, coal ≈97.2 kg CO₂/MMBtu); coal generation is converted to fuel using a typical <b>11,500 Btu/kWh</b> heat rate. The percentage is the reduction relative to GVEA's modeled total emissions today. Beyond the environmental benefit, verified emissions reductions help GVEA unlock a large share of the federal funding under its already-awarded <b>USDA New ERA grant</b>.</li>
         <li><b>Dispatched energy mix:</b> energy actually served to GVEA load by source, excluding surplus wind that is spilled or sold to other utilities.</li>
         <li><b>New LM6000 toggle:</b> GVEA's plan includes a new LM6000 turbine at the North Pole combined-cycle plant (the default base case). Turning it off compares against a base case with today's units only; without the new turbine the system uses more diesel, so wind displaces more oil. Each case is measured against its own no-Shovel-Creek baseline.</li>
-        <li><b>Typical home:</b> illustrative only — monthly bill impact = rate impact × the kWh you enter (default <b>581 kWh/mo</b>, GVEA's average residential monthly use).</li>
+        <li><b>Typical home:</b> illustrative only; monthly bill impact = rate impact × the kWh you enter (default <b>581 kWh/mo</b>, GVEA's average residential monthly use).</li>
         <li><b>No federal tax credits</b> are assumed for Shovel Creek wind. Fuel cost relationships and densities are from GVEA COPA filings and the 2025 RCA annual filing; the base case uses diesel/naphtha extrapolated from &gt;25 years of ANS West Coast crude prices.</li>
       </ul>
     </div>
   </details>
 
+  <footer class="site-footer">
+    <p class="wip"><b>Work in progress.</b> This website is a work-in-progress showcase of our results. Keep checking back for updates. We'd genuinely enjoy hearing your feedback or questions: <a href="https://www.alaskarenewables.com/contact" target="_blank" rel="noopener">get in touch</a>.</p>
+    <p class="updated">Last updated August 5, 2026 &middot; Alaska Renewables</p>
+  </footer>
 
 </div>
 
 <script>
-const DATA = {"yes": {"0": {"68": {"oil": [10, 20, 25, 30, 40, 50], "s0": [12.1249, 7.8164, 5.6622, 3.5079, -0.8006, -5.1091], "s1": [11.4338, 5.4427, 2.4471, -0.5484, -6.5396, -12.5307], "s2": [11.2569, 4.2301, 0.7166, -2.7968, -9.8236, -16.8505], "s3": [10.4698, 2.542, -1.4219, -5.3859, -13.3137, -21.2415], "s4": [10.3813, 2.2988, -1.7425, -5.7837, -13.8662, -21.9487]}, "104": {"oil": [10, 20, 25, 30, 40, 50], "s0": [15.2414, 10.7188, 8.4575, 6.1962, 1.6735, -2.8491], "s1": [14.0852, 7.4549, 4.1397, 0.8246, -5.8058, -12.4361], "s2": [13.516, 5.4116, 1.3594, -2.6928, -10.7972, -18.9016], "s3": [12.3614, 3.0494, -1.6066, -6.2627, -15.5747, -24.8868], "s4": [12.1657, 2.6, -2.1828, -6.9656, -16.5313, -26.0969]}, "120": {"oil": [10, 20, 25, 30, 40, 50], "s0": [16.46, 11.8958, 9.6137, 7.3315, 2.7673, -1.797], "s1": [15.2299, 8.5195, 5.1643, 1.8091, -4.9013, -11.6118], "s2": [14.4721, 6.0932, 1.9038, -2.2856, -10.6644, -19.0433], "s3": [13.1418, 3.3686, -1.518, -6.4047, -16.1779, -25.9511], "s4": [12.8874, 2.8217, -2.2111, -7.2439, -17.3096, -27.3753]}}, "12.32": {"68": {"oil": [10, 20, 25, 30, 40, 50], "s0": [12.1249, 7.8164, 5.6622, 3.5079, -0.8006, -5.1091], "s1": [11.4338, 5.4427, 2.4471, -0.5484, -6.5396, -12.5307], "s2": [12.2579, 5.2311, 1.7176, -1.7958, -8.8226, -15.8495], "s3": [12.9688, 5.041, 1.077, -2.8869, -10.8147, -18.7425], "s4": [12.8802, 4.7977, 0.7565, -3.2848, -11.3672, -19.4497]}, "104": {"oil": [10, 20, 25, 30, 40, 50], "s0": [15.2414, 10.7188, 8.4575, 6.1962, 1.6735, -2.8491], "s1": [14.0852, 7.4549, 4.1397, 0.8246, -5.8058, -12.4361], "s2": [14.5168, 6.4124, 2.3603, -1.6919, -9.7963, -17.9007], "s3": [14.859, 5.547, 0.891, -3.7651, -13.0771, -22.3892], "s4": [14.6632, 5.0976, 0.3147, -4.4681, -14.0337, -23.5994]}, "120": {"oil": [10, 20, 25, 30, 40, 50], "s0": [16.46, 11.8958, 9.6137, 7.3315, 2.7673, -1.797], "s1": [15.2299, 8.5195, 5.1643, 1.8091, -4.9013, -11.6118], "s2": [15.4728, 7.094, 2.9046, -1.2848, -9.6637, -18.0425], "s3": [15.6389, 5.8656, 0.979, -3.9076, -13.6808, -23.454], "s4": [15.3844, 5.3188, 0.2859, -4.7469, -14.8125, -24.8782]}}}, "no": {"0": {"68": {"oil": [10, 20, 25, 30, 40, 50], "s0": [9.0269, 0.987, -3.033, -7.053, -15.0929, -23.1328], "s1": [8.4385, -0.5577, -5.0558, -9.554, -18.5502, -27.5464], "s2": [8.3429, -1.1239, -5.8574, -10.5908, -20.0577, -29.5245], "s3": [7.5682, -2.5713, -7.641, -12.7107, -22.8502, -32.9897], "s4": [7.4398, -2.894, -8.061, -13.2279, -23.5618, -33.8957]}, "104": {"oil": [10, 20, 25, 30, 40, 50], "s0": [10.475, 0.8183, -4.0101, -8.8385, -18.4953, -28.152], "s1": [9.815, -0.834, -6.1585, -11.483, -22.132, -32.7811], "s2": [9.5483, -1.7572, -7.41, -13.0628, -24.3683, -35.6739], "s3": [8.5336, -3.6238, -9.7025, -15.7812, -27.9385, -40.0959], "s4": [8.3152, -4.1074, -10.3187, -16.53, -28.9526, -41.3751]}, "120": {"oil": [10, 20, 25, 30, 40, 50], "s0": [11.1473, 1.0099, -4.0588, -9.1275, -19.2649, -29.4023], "s1": [10.3205, -0.9891, -6.6439, -12.2987, -23.6084, -34.918], "s2": [10.0037, -2.0224, -8.0354, -14.0485, -26.0746, -38.1007], "s3": [8.8153, -4.2058, -10.7163, -17.2269, -30.248, -43.2691], "s4": [8.5847, -4.7054, -11.3505, -17.9955, -31.2856, -44.5757]}}, "12.32": {"68": {"oil": [10, 20, 25, 30, 40, 50], "s0": [9.0269, 0.987, -3.033, -7.053, -15.0929, -23.1328], "s1": [8.4385, -0.5577, -5.0558, -9.554, -18.5502, -27.5464], "s2": [9.3441, -0.1228, -4.8562, -9.5896, -19.0565, -28.5234], "s3": [10.0674, -0.0721, -5.1419, -10.2116, -20.3511, -30.4905], "s4": [9.9391, -0.3948, -5.5617, -10.7287, -21.0625, -31.3964]}, "104": {"oil": [10, 20, 25, 30, 40, 50], "s0": [10.475, 0.8183, -4.0101, -8.8385, -18.4953, -28.152], "s1": [9.815, -0.834, -6.1585, -11.483, -22.132, -32.7811], "s2": [10.5491, -0.7565, -6.4092, -12.062, -23.3675, -34.6731], "s3": [11.0311, -1.1263, -7.205, -13.2837, -25.4411, -37.5985], "s4": [10.8126, -1.61, -7.8213, -14.0326, -26.4551, -38.8777]}, "120": {"oil": [10, 20, 25, 30, 40, 50], "s0": [11.1473, 1.0099, -4.0588, -9.1275, -19.2649, -29.4023], "s1": [10.3205, -0.9891, -6.6439, -12.2987, -23.6084, -34.918], "s2": [11.0044, -1.0217, -7.0348, -13.0479, -25.074, -37.1001], "s3": [11.312, -1.7091, -8.2196, -14.7302, -27.7513, -40.7724], "s4": [11.0813, -2.2087, -8.8538, -15.4988, -28.7889, -42.079]}}}};  // [lm][bessCostKey][capacity] rate impact $/MWh, s0..s4 operational levels (recalculated from v2)
+const DATA = {"yes": {"0": {"0": {"36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [1.5377, -1.3618, -2.8116, -4.2614, -7.1609, -10.0604], "s1": [1.1673, -2.8299, -4.8285, -6.8272, -10.8244, -14.8217], "s2": [1.8658, -1.3686, -2.9859, -4.6031, -7.8375, -11.072], "s3": [1.209, -3.0258, -5.1433, -7.2607, -11.4956, -15.7304], "s4": [0.8635, -3.1037, -5.0873, -7.0709, -11.0381, -15.0054]}}, "68": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [12.1249, 7.8164, 5.6622, 3.5079, -0.8006, -5.1091], "s1": [12.2783, 6.2872, 3.2916, 0.296, -5.6951, -11.6863], "s2": [12.1004, 5.0736, 1.5601, -1.9533, -8.9801, -16.007], "s3": [11.3121, 3.3843, -0.5796, -4.5435, -12.4714, -20.3992], "s4": [11.2236, 3.1411, -0.9001, -4.9414, -13.0239, -21.1064]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [15.3312, 9.7785, 7.0021, 4.2257, -1.327, -6.8798], "s1": [14.1472, 6.5787, 2.7944, -0.9899, -8.5585, -16.127], "s2": [13.4739, 4.3063, -0.2776, -4.8614, -14.0291, -23.1967], "s3": [12.3212, 1.7706, -3.5046, -8.7799, -19.3305, -29.881], "s4": [11.7108, 1.2399, -3.9956, -9.2311, -19.702, -30.173]}}, "104": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [15.2414, 10.7188, 8.4575, 6.1962, 1.6735, -2.8491], "s1": [15.2331, 8.6028, 5.2876, 1.9724, -4.6579, -11.2883], "s2": [14.6624, 6.558, 2.5058, -1.5464, -9.6508, -17.7552], "s3": [13.5058, 4.1937, -0.4623, -5.1183, -14.4304, -23.7424], "s4": [13.31, 3.7443, -1.0385, -5.8213, -15.387, -24.9526]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [18.8204, 13.2867, 10.5199, 7.753, 2.2193, -3.3144], "s1": [17.31, 9.5251, 5.6326, 1.7402, -6.0448, -13.8297], "s2": [16.3322, 6.6619, 1.8267, -3.0084, -12.6787, -22.349], "s3": [14.8967, 3.6404, -1.9877, -7.6158, -18.8721, -30.1284], "s4": [14.0252, 2.7137, -2.942, -8.5978, -19.9093, -31.2208]}}, "120": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [16.46, 11.8958, 9.6137, 7.3315, 2.7673, -1.797], "s1": [16.7453, 10.0348, 6.6796, 3.3244, -3.386, -10.0964], "s2": [15.9853, 7.6065, 3.4171, -0.7723, -9.1512, -17.53], "s3": [14.6521, 4.8789, -0.0077, -4.8943, -14.6675, -24.4407], "s4": [14.3977, 4.332, -0.7008, -5.7336, -15.7993, -25.8649]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [20.4084, 14.9089, 12.1591, 9.4093, 3.9097, -1.5898], "s1": [18.8128, 11.0232, 7.1284, 3.2336, -4.5559, -12.3455], "s2": [17.6758, 7.8563, 2.9465, -1.9632, -11.7827, -21.6022], "s3": [16.1321, 4.6349, -1.1137, -6.8623, -18.3594, -29.8566], "s4": [15.2136, 3.65, -2.1318, -7.9136, -19.4772, -31.0407]}}}, "12.32": {"0": {"36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [1.5377, -1.3618, -2.8116, -4.2614, -7.1609, -10.0604], "s1": [1.1673, -2.8299, -4.8285, -6.8272, -10.8244, -14.8217], "s2": [2.8678, -0.3667, -1.9839, -3.6011, -6.8355, -10.07], "s3": [3.7148, -0.5201, -2.6375, -4.755, -8.9898, -13.2247], "s4": [3.3421, -0.6251, -2.6087, -4.5923, -8.5596, -12.5268]}}, "68": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [12.1249, 7.8164, 5.6622, 3.5079, -0.8006, -5.1091], "s1": [12.2783, 6.2872, 3.2916, 0.296, -5.6951, -11.6863], "s2": [13.1014, 6.0745, 2.5611, -0.9523, -7.9791, -15.006], "s3": [13.8111, 5.8833, 1.9194, -2.0446, -9.9724, -17.9002], "s4": [13.7226, 5.6401, 1.5988, -2.4424, -10.5249, -18.6074]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [15.3312, 9.7785, 7.0021, 4.2257, -1.327, -6.8798], "s1": [14.1472, 6.5787, 2.7944, -0.9899, -8.5585, -16.127], "s2": [14.475, 5.3074, 0.7235, -3.8603, -13.028, -22.1957], "s3": [14.8205, 4.2699, -1.0053, -6.2806, -16.8312, -27.3817], "s4": [14.182, 3.7111, -1.5244, -6.7598, -17.2308, -27.7017]}}, "104": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [15.2414, 10.7188, 8.4575, 6.1962, 1.6735, -2.8491], "s1": [15.2331, 8.6028, 5.2876, 1.9724, -4.6579, -11.2883], "s2": [15.6632, 7.5588, 3.5066, -0.5456, -8.65, -16.7544], "s3": [16.0034, 6.6913, 2.0353, -2.6207, -11.9328, -21.2448], "s4": [15.8075, 6.2419, 1.4591, -3.3238, -12.8894, -22.4551]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [18.8204, 13.2867, 10.5199, 7.753, 2.2193, -3.3144], "s1": [17.31, 9.5251, 5.6326, 1.7402, -6.0448, -13.8297], "s2": [17.3333, 7.663, 2.8279, -2.0073, -11.6776, -21.3479], "s3": [17.3959, 6.1396, 0.5114, -5.1167, -16.373, -27.6293], "s4": [16.4959, 5.1844, -0.4714, -6.1271, -17.4386, -28.7501]}}, "120": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [16.46, 11.8958, 9.6137, 7.3315, 2.7673, -1.797], "s1": [16.7453, 10.0348, 6.6796, 3.3244, -3.386, -10.0964], "s2": [16.9861, 8.6072, 4.4178, 0.2284, -8.1504, -16.5293], "s3": [17.1492, 7.376, 2.4894, -2.3972, -12.1704, -21.9436], "s4": [16.8948, 6.8291, 1.7963, -3.2365, -13.3022, -23.3679]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [20.4084, 14.9089, 12.1591, 9.4093, 3.9097, -1.5898], "s1": [18.8128, 11.0232, 7.1284, 3.2336, -4.5559, -12.3455], "s2": [18.6769, 8.8574, 3.9477, -0.9621, -10.7816, -20.6011], "s3": [18.6308, 7.1337, 1.3851, -4.3635, -15.8607, -27.3579], "s4": [17.6842, 6.1206, 0.3388, -5.443, -17.0065, -28.5701]}}}}, "no": {"0": {"0": {"36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [-0.1732, -4.8764, -7.228, -9.5796, -14.2828, -18.986], "s1": [-0.3774, -5.5448, -8.1285, -10.7122, -15.8796, -21.0471], "s2": [0.0918, -3.4248, -5.1831, -6.9414, -10.458, -13.9746], "s3": [-0.4305, -5.6338, -8.2354, -10.837, -16.0403, -21.2436], "s4": [-0.4914, -5.327, -7.7448, -10.1626, -14.9983, -19.8339]}}, "68": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [9.0269, 0.987, -3.033, -7.053, -15.0929, -23.1328], "s1": [9.2834, 0.2872, -4.2109, -8.709, -17.7052, -26.7015], "s2": [9.1866, -0.2803, -5.0137, -9.7472, -19.214, -28.6809], "s3": [8.4106, -1.7289, -6.7986, -11.8683, -22.0078, -32.1473], "s4": [8.2822, -2.0516, -7.2186, -12.3855, -22.7194, -33.0532]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [10.3866, -0.4685, -5.8961, -11.3236, -22.1787, -33.0337], "s1": [9.6313, -2.3495, -8.3399, -14.3302, -26.311, -38.2917], "s2": [9.4955, -3.0508, -9.3239, -15.5971, -28.1433, -40.6896], "s3": [8.4488, -5.0363, -11.7788, -18.5214, -32.0064, -45.4915], "s4": [8.0203, -5.2065, -11.82, -18.4334, -31.6603, -44.8871]}}, "104": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [10.475, 0.8183, -4.0101, -8.8385, -18.4953, -28.152], "s1": [10.9634, 0.3144, -5.0101, -10.3346, -20.9836, -31.6326], "s2": [10.6946, -0.6109, -6.2637, -11.9165, -23.222, -34.5276], "s3": [9.6779, -2.4795, -8.5582, -14.6369, -26.7943, -38.9517], "s4": [9.4594, -2.9632, -9.1745, -15.3857, -27.8083, -40.2309]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [12.6926, 0.9149, -4.974, -10.8629, -22.6406, -34.4184], "s1": [11.7601, -1.2746, -7.7919, -14.3092, -27.3439, -40.3785], "s2": [11.4489, -2.3331, -9.2242, -16.1152, -29.8973, -43.6793], "s3": [10.2042, -4.6522, -12.0804, -19.5086, -34.365, -49.2214], "s4": [9.497, -5.2934, -12.6887, -20.0839, -34.8744, -49.6649]}}, "120": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [11.1473, 1.0099, -4.0588, -9.1275, -19.2649, -29.4023], "s1": [11.8366, 0.5269, -5.1279, -10.7827, -22.0923, -33.4019], "s2": [11.5168, -0.5093, -6.5224, -12.5354, -24.5615, -36.5876], "s3": [10.3255, -2.6957, -9.2062, -15.7168, -28.7379, -41.759], "s4": [10.0948, -3.1953, -9.8404, -16.4854, -29.7755, -43.0656]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [13.8809, 1.8069, -4.23, -10.267, -22.3409, -34.4148], "s1": [12.8611, -0.5281, -7.2227, -13.9172, -27.3064, -40.6956], "s2": [12.4673, -1.7296, -8.828, -15.9264, -30.1233, -44.3201], "s3": [11.1569, -4.1567, -11.8134, -19.4702, -34.7837, -50.0972], "s4": [10.3972, -4.8611, -12.4902, -20.1193, -35.3776, -50.6359]}}}, "12.32": {"0": {"36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [-0.1732, -4.8764, -7.228, -9.5796, -14.2828, -18.986], "s1": [-0.3774, -5.5448, -8.1285, -10.7122, -15.8796, -21.0471], "s2": [1.0956, -2.421, -4.1793, -5.9376, -9.4542, -12.9708], "s3": [2.0832, -3.12, -5.7217, -8.3233, -13.5265, -18.7298], "s4": [1.9984, -2.8372, -5.255, -7.6728, -12.5085, -17.3441]}}, "68": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [9.0269, 0.987, -3.033, -7.053, -15.0929, -23.1328], "s1": [9.2834, 0.2872, -4.2109, -8.709, -17.7052, -26.7015], "s2": [10.1877, 0.7209, -4.0126, -8.746, -18.2129, -27.6797], "s3": [10.9097, 0.7703, -4.2995, -9.3692, -19.5087, -29.6482], "s4": [10.7815, 0.4476, -4.7193, -9.8863, -20.2201, -30.554]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [10.3866, -0.4685, -5.8961, -11.3236, -22.1787, -33.0337], "s1": [9.6313, -2.3495, -8.3399, -14.3302, -26.311, -38.2917], "s2": [10.4967, -2.0495, -8.3227, -14.5958, -27.1421, -39.6883], "s3": [10.9482, -2.5369, -9.2794, -16.022, -29.5071, -42.9921], "s4": [10.4918, -2.7351, -9.3485, -15.9619, -29.1888, -42.4157]}}, "104": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [10.475, 0.8183, -4.0101, -8.8385, -18.4953, -28.152], "s1": [10.9634, 0.3144, -5.0101, -10.3346, -20.9836, -31.6326], "s2": [11.6954, 0.3899, -5.2629, -10.9157, -22.2212, -33.5268], "s3": [12.1753, 0.0179, -6.0608, -12.1395, -24.2968, -36.4542], "s4": [11.9568, -0.4658, -6.6771, -12.8883, -25.3109, -37.7335]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [12.6926, 0.9149, -4.974, -10.8629, -22.6406, -34.4184], "s1": [11.7601, -1.2746, -7.7919, -14.3092, -27.3439, -40.3785], "s2": [12.45, -1.3321, -8.2231, -15.1141, -28.8962, -42.6782], "s3": [12.7028, -2.1536, -9.5818, -17.01, -31.8664, -46.7228], "s4": [11.9675, -2.823, -10.2182, -17.6134, -32.4039, -47.1944]}}, "120": {"0": {"oil": [10, 20, 25, 30, 40, 50], "s0": [11.1473, 1.0099, -4.0588, -9.1275, -19.2649, -29.4023], "s1": [11.8366, 0.5269, -5.1279, -10.7827, -22.0923, -33.4019], "s2": [12.5174, 0.4913, -5.5217, -11.5348, -23.5609, -35.587], "s3": [12.8221, -0.199, -6.7095, -13.2201, -26.2412, -39.2623], "s4": [12.5915, -0.6986, -7.3437, -13.9887, -27.2788, -40.5689]}, "36": {"oil": [10, 20, 25, 30, 40, 50], "s0": [13.8809, 1.8069, -4.23, -10.267, -22.3409, -34.4148], "s1": [12.8611, -0.5281, -7.2227, -13.9172, -27.3064, -40.6956], "s2": [13.4683, -0.7286, -7.827, -14.9254, -29.1223, -43.3191], "s3": [13.655, -1.6585, -9.3152, -16.972, -32.2855, -47.599], "s4": [12.8675, -2.3907, -10.0199, -17.649, -32.9073, -48.1656]}}}}};  // [lm][bessKey][shovelCap][deltaCap] rate impact $/MWh, s0..s4 (all-Delta update)
 
-const GEN = {"yes": {"0": {"0": {"coal": 615289, "hydro": 77611, "lsr": 420893, "diesel": 99472, "naphtha": 214293, "wind": 47091, "curtail": 996, "lsrBtu": 3062260, "oilBtu": 1294720, "napBtu": 1680541, "loadMWh": 1474648}, "1": {"coal": 615289, "hydro": 77611, "lsr": 430128, "diesel": 98344, "naphtha": 206127, "wind": 47495, "curtail": 592, "lsrBtu": 3108700, "oilBtu": 1276529, "napBtu": 1602843, "loadMWh": 1474994}, "2": {"coal": 605884, "hydro": 77601, "lsr": 431851, "diesel": 119548, "naphtha": 192998, "wind": 47437, "curtail": 650, "lsrBtu": 3117365, "oilBtu": 1546750, "napBtu": 1502769, "loadMWh": 1475318}, "3": {"coal": 615289, "hydro": 77602, "lsr": 430415, "diesel": 98511, "naphtha": 205617, "wind": 47544, "curtail": 543, "lsrBtu": 3110127, "oilBtu": 1279225, "napBtu": 1598439, "loadMWh": 1474977}, "4": {"coal": 615289, "hydro": 77602, "lsr": 430545, "diesel": 98196, "naphtha": 205805, "wind": 47544, "curtail": 543, "lsrBtu": 3110796, "oilBtu": 1273932, "napBtu": 1599403, "loadMWh": 1474981}}, "68": {"0": {"coal": 615289, "hydro": 73935, "lsr": 361282, "diesel": 59682, "naphtha": 187263, "wind": 177445, "curtail": 30189, "lsrBtu": 2762766, "oilBtu": 814481, "napBtu": 1525820, "loadMWh": 1474896}, "1": {"coal": 615289, "hydro": 79272, "lsr": 372839, "diesel": 55383, "naphtha": 166821, "wind": 185666, "curtail": 21968, "lsrBtu": 2820789, "oilBtu": 750076, "napBtu": 1342585, "loadMWh": 1475270}, "2": {"coal": 615289, "hydro": 83644, "lsr": 383246, "diesel": 54795, "naphtha": 145954, "wind": 192194, "curtail": 15440, "lsrBtu": 2873113, "oilBtu": 782850, "napBtu": 1159228, "loadMWh": 1475122}, "3": {"coal": 615289, "hydro": 86117, "lsr": 387609, "diesel": 54436, "naphtha": 137109, "wind": 194460, "curtail": 13174, "lsrBtu": 2894980, "oilBtu": 730508, "napBtu": 1081018, "loadMWh": 1475018}, "4": {"coal": 615289, "hydro": 86280, "lsr": 388437, "diesel": 52663, "naphtha": 137832, "wind": 194518, "curtail": 13116, "lsrBtu": 2899132, "oilBtu": 702683, "napBtu": 1085974, "loadMWh": 1475018}}, "104": {"0": {"coal": 615289, "hydro": 64512, "lsr": 347207, "diesel": 58723, "naphtha": 181361, "wind": 207816, "curtail": 74417, "lsrBtu": 2692055, "oilBtu": 815544, "napBtu": 1493194, "loadMWh": 1474908}, "1": {"coal": 615289, "hydro": 70198, "lsr": 358233, "diesel": 51674, "naphtha": 158560, "wind": 221306, "curtail": 60927, "lsrBtu": 2747429, "oilBtu": 708189, "napBtu": 1290160, "loadMWh": 1475260}, "2": {"coal": 615289, "hydro": 74820, "lsr": 369448, "diesel": 50246, "naphtha": 130064, "wind": 235273, "curtail": 46960, "lsrBtu": 2803897, "oilBtu": 742885, "napBtu": 1040316, "loadMWh": 1475140}, "3": {"coal": 615289, "hydro": 77482, "lsr": 374640, "diesel": 53797, "naphtha": 111120, "wind": 242735, "curtail": 39498, "lsrBtu": 2829999, "oilBtu": 730640, "napBtu": 877044, "loadMWh": 1475064}, "4": {"coal": 615289, "hydro": 77964, "lsr": 375177, "diesel": 51278, "naphtha": 111221, "wind": 244135, "curtail": 38098, "lsrBtu": 2832699, "oilBtu": 692520, "napBtu": 877661, "loadMWh": 1475064}}, "120": {"0": {"coal": 615289, "hydro": 60686, "lsr": 341316, "diesel": 58509, "naphtha": 179712, "wind": 219396, "curtail": 99963, "lsrBtu": 2662510, "oilBtu": 818213, "napBtu": 1484388, "loadMWh": 1474909}, "1": {"coal": 615289, "hydro": 66203, "lsr": 352046, "diesel": 51319, "naphtha": 156464, "wind": 233961, "curtail": 85398, "lsrBtu": 2716416, "oilBtu": 708315, "napBtu": 1278247, "loadMWh": 1475281}, "2": {"coal": 615289, "hydro": 70774, "lsr": 363550, "diesel": 48881, "naphtha": 125858, "wind": 250795, "curtail": 68564, "lsrBtu": 2774343, "oilBtu": 732584, "napBtu": 1010220, "loadMWh": 1475148}, "3": {"coal": 615289, "hydro": 73341, "lsr": 369716, "diesel": 53772, "naphtha": 102091, "wind": 260867, "curtail": 58492, "lsrBtu": 2805308, "oilBtu": 733498, "napBtu": 806254, "loadMWh": 1475076}, "4": {"coal": 615289, "hydro": 73622, "lsr": 370159, "diesel": 50891, "naphtha": 102139, "wind": 262976, "curtail": 56383, "lsrBtu": 2807522, "oilBtu": 689988, "napBtu": 806497, "loadMWh": 1475076}}}, "no": {"0": {"0": {"coal": 615289, "hydro": 77614, "lsr": 415633, "diesel": 308909, "naphtha": 0, "wind": 48032, "curtail": 55, "lsrBtu": 2942521, "oilBtu": 3955634, "napBtu": 0, "loadMWh": 1465477}, "1": {"coal": 615289, "hydro": 77603, "lsr": 418805, "diesel": 306210, "naphtha": 0, "wind": 48034, "curtail": 53, "lsrBtu": 2958686, "oilBtu": 3901781, "napBtu": 0, "loadMWh": 1465941}, "2": {"coal": 605884, "hydro": 77602, "lsr": 412997, "diesel": 326874, "naphtha": 0, "wind": 47988, "curtail": 99, "lsrBtu": 2929261, "oilBtu": 4160691, "napBtu": 0, "loadMWh": 1471345}, "3": {"coal": 615289, "hydro": 77603, "lsr": 418805, "diesel": 306208, "naphtha": 0, "wind": 48034, "curtail": 53, "lsrBtu": 2958686, "oilBtu": 3902073, "napBtu": 0, "loadMWh": 1465939}, "4": {"coal": 615289, "hydro": 77603, "lsr": 419052, "diesel": 305970, "naphtha": 0, "wind": 48034, "curtail": 53, "lsrBtu": 2959947, "oilBtu": 3896705, "napBtu": 0, "loadMWh": 1465948}}, "68": {"0": {"coal": 615289, "hydro": 89934, "lsr": 361211, "diesel": 211169, "naphtha": 0, "wind": 196494, "curtail": 11140, "lsrBtu": 2667985, "oilBtu": 2793741, "napBtu": 0, "loadMWh": 1474098}, "1": {"coal": 615289, "hydro": 90917, "lsr": 366348, "diesel": 203505, "naphtha": 0, "wind": 198381, "curtail": 9253, "lsrBtu": 2693960, "oilBtu": 2653387, "napBtu": 0, "loadMWh": 1474439}, "2": {"coal": 615289, "hydro": 92919, "lsr": 370759, "diesel": 195703, "naphtha": 0, "wind": 199692, "curtail": 7942, "lsrBtu": 2716286, "oilBtu": 2587971, "napBtu": 0, "loadMWh": 1474362}, "3": {"coal": 615289, "hydro": 93720, "lsr": 372948, "diesel": 192379, "naphtha": 0, "wind": 199983, "curtail": 7651, "lsrBtu": 2727337, "oilBtu": 2492352, "napBtu": 0, "loadMWh": 1474319}, "4": {"coal": 615289, "hydro": 93937, "lsr": 373817, "diesel": 190917, "naphtha": 0, "wind": 200360, "curtail": 7274, "lsrBtu": 2731712, "oilBtu": 2463514, "napBtu": 0, "loadMWh": 1474320}}, "104": {"0": {"coal": 615289, "hydro": 78779, "lsr": 345257, "diesel": 191366, "naphtha": 0, "wind": 243471, "curtail": 38762, "lsrBtu": 2587956, "oilBtu": 2555515, "napBtu": 0, "loadMWh": 1474162}, "1": {"coal": 615289, "hydro": 79359, "lsr": 350231, "diesel": 183065, "naphtha": 0, "wind": 246580, "curtail": 35653, "lsrBtu": 2613086, "oilBtu": 2409830, "napBtu": 0, "loadMWh": 1474523}, "2": {"coal": 615289, "hydro": 81129, "lsr": 355198, "diesel": 172478, "naphtha": 0, "wind": 250343, "curtail": 31890, "lsrBtu": 2638229, "oilBtu": 2317313, "napBtu": 0, "loadMWh": 1474437}, "3": {"coal": 615289, "hydro": 82109, "lsr": 357447, "diesel": 168027, "naphtha": 0, "wind": 251489, "curtail": 30744, "lsrBtu": 2649565, "oilBtu": 2195414, "napBtu": 0, "loadMWh": 1474360}, "4": {"coal": 615289, "hydro": 82767, "lsr": 357748, "diesel": 165630, "naphtha": 0, "wind": 252920, "curtail": 29313, "lsrBtu": 2651055, "oilBtu": 2156199, "napBtu": 0, "loadMWh": 1474353}}, "120": {"0": {"coal": 615289, "hydro": 74047, "lsr": 338747, "diesel": 184973, "naphtha": 0, "wind": 261135, "curtail": 58224, "lsrBtu": 2555253, "oilBtu": 2484707, "napBtu": 0, "loadMWh": 1474191}, "1": {"coal": 615289, "hydro": 75511, "lsr": 343328, "diesel": 174957, "naphtha": 0, "wind": 265478, "curtail": 53881, "lsrBtu": 2578409, "oilBtu": 2312483, "napBtu": 0, "loadMWh": 1474563}, "2": {"coal": 615289, "hydro": 77376, "lsr": 348368, "diesel": 163396, "naphtha": 0, "wind": 270045, "curtail": 49314, "lsrBtu": 2603869, "oilBtu": 2211178, "napBtu": 0, "loadMWh": 1474474}, "3": {"coal": 615289, "hydro": 78327, "lsr": 350772, "diesel": 158001, "naphtha": 0, "wind": 272026, "curtail": 47333, "lsrBtu": 2615970, "oilBtu": 2068211, "napBtu": 0, "loadMWh": 1474415}, "4": {"coal": 615289, "hydro": 78657, "lsr": 351165, "diesel": 155463, "naphtha": 0, "wind": 273843, "curtail": 45516, "lsrBtu": 2617946, "oilBtu": 2028390, "napBtu": 0, "loadMWh": 1474417}}}};  // [lm][capacity][opLevel] dispatch mix, fuel use, spilled wind (curtail), loadMWh (v2)
-// Delta Wind (36 MW) scenarios — full enabler complement only, new-LM6000 base case (LM=yes).
-const DELTA_RATE = {"0": {"68": {"oil": [10, 20, 25, 30, 40, 50], "d": [11.7108, 1.2399, -3.9956, -9.2311, -19.702, -30.173], "ds": [10.0286, -0.4423, -5.6778, -10.9133, -21.3842, -31.8551]}, "104": {"oil": [10, 20, 25, 30, 40, 50], "d": [14.0252, 2.7137, -2.942, -8.5978, -19.9093, -31.2208], "ds": [10.6002, -0.7113, -6.3671, -12.0228, -23.3343, -34.6458]}, "120": {"oil": [10, 20, 25, 30, 40, 50], "d": [15.2136, 3.65, -2.1318, -7.9136, -19.4772, -31.0407], "ds": [10.6641, -0.8994, -6.6812, -12.463, -24.0266, -35.5902]}}, "12.32": {"68": {"oil": [10, 20, 25, 30, 40, 50], "d": [14.182, 3.7111, -1.5244, -6.7598, -17.2308, -27.7017], "ds": [12.4999, 2.0289, -3.2065, -8.442, -18.9129, -29.3839]}, "104": {"oil": [10, 20, 25, 30, 40, 50], "d": [16.4959, 5.1844, -0.4714, -6.1271, -17.4386, -28.7501], "ds": [13.0708, 1.7593, -3.8964, -9.5522, -20.8637, -32.1752]}, "120": {"oil": [10, 20, 25, 30, 40, 50], "d": [17.6842, 6.1206, 0.3388, -5.443, -17.0065, -28.5701], "ds": [13.1348, 1.5712, -4.2106, -9.9924, -21.556, -33.1195]}}};  // [bessKey][cap] {oil, d=Shovel+Delta no sale, ds=+sale} $/MWh
-const DELTA_GEN = {"68": {"coal": 615289, "hydro": 77955, "lsr": 374757, "diesel": 44435, "naphtha": 108666, "wind": 270039, "curtail": 33445, "lsrBtu": 2830675, "oilBtu": 600318, "napBtu": 851184, "loadMWh": 1491141}, "104": {"coal": 615289, "hydro": 68599, "lsr": 361882, "diesel": 44466, "naphtha": 90990, "wind": 309984, "curtail": 68099, "lsrBtu": 2766061, "oilBtu": 609739, "napBtu": 716366, "loadMWh": 1491209}, "120": {"coal": 615289, "hydro": 64871, "lsr": 356846, "diesel": 45419, "naphtha": 84007, "wind": 324755, "curtail": 90454, "lsrBtu": 2740831, "oilBtu": 625857, "napBtu": 662562, "loadMWh": 1491187}};   // [cap] full-complement dispatch incl. Delta (curtail, loadMWh, fuels)
+const GEN = {"no": {"0": {"0": {"0": {"coal": 615289, "hydro": 77614, "lsr": 415633, "diesel": 308909, "naphtha": 0, "wind": 48032, "curtail": 55, "lsrBtu": 2942521, "oilBtu": 3955634, "napBtu": 0, "loadMWh": 1465477, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77614, 5241, 13], "NPCC": [415633, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [223836, 6511, 145], "NPSC2": [70399, 2574, 130], "Zhender1": [9446, 869, 67], "Zhender2": [5228, 452, 31]}}, "1": {"coal": 615289, "hydro": 77603, "lsr": 418805, "diesel": 306210, "naphtha": 0, "wind": 48034, "curtail": 53, "lsrBtu": 2958686, "oilBtu": 3901781, "napBtu": 0, "loadMWh": 1465941, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77603, 5240, 12], "NPCC": [418805, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [223294, 6209, 159], "NPSC2": [68076, 2302, 117], "Zhender1": [9757, 713, 160], "Zhender2": [5083, 377, 46]}}, "2": {"coal": 605884, "hydro": 77602, "lsr": 412997, "diesel": 326874, "naphtha": 0, "wind": 47988, "curtail": 99, "lsrBtu": 2929261, "oilBtu": 4160691, "napBtu": 0, "loadMWh": 1471345, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [19648, 3948, 35], "Brad": [77602, 5269, 17], "NPCC": [412997, 7884, 9], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [218105, 5820, 141], "NPSC2": [90790, 2731, 90], "Zhender1": [12013, 874, 166], "Zhender2": [5966, 467, 86]}}, "3": {"coal": 615289, "hydro": 77603, "lsr": 418805, "diesel": 306208, "naphtha": 0, "wind": 48034, "curtail": 53, "lsrBtu": 2958686, "oilBtu": 3902073, "napBtu": 0, "loadMWh": 1465939, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77603, 5240, 12], "NPCC": [418805, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [223300, 6189, 159], "NPSC2": [68075, 2249, 117], "Zhender1": [9688, 713, 160], "Zhender2": [5144, 377, 48]}}, "4": {"coal": 615289, "hydro": 77603, "lsr": 419052, "diesel": 305970, "naphtha": 0, "wind": 48034, "curtail": 53, "lsrBtu": 2959947, "oilBtu": 3896705, "napBtu": 0, "loadMWh": 1465948, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77603, 5240, 12], "NPCC": [419052, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [223471, 6189, 161], "NPSC2": [67656, 2249, 117], "Zhender1": [9751, 713, 161], "Zhender2": [5092, 377, 48]}}}, "36": {"0": {"coal": 615289, "hydro": 77603, "lsr": 386586, "diesel": 250882, "naphtha": 0, "wind": 139407, "curtail": 4530, "lsrBtu": 2796268, "oilBtu": 3275953, "napBtu": 0, "loadMWh": 1469766, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77603, 5763, 87], "NPCC": [386586, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [182369, 6411, 157], "NPSC2": [56831, 2448, 129], "Zhender1": [7719, 801, 67], "Zhender2": [3962, 405, 35]}}, "1": {"coal": 615289, "hydro": 77613, "lsr": 390404, "diesel": 246897, "naphtha": 0, "wind": 140096, "curtail": 3841, "lsrBtu": 2815563, "oilBtu": 3208881, "napBtu": 0, "loadMWh": 1470298, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77613, 5611, 71], "NPCC": [390404, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [179635, 5871, 169], "NPSC2": [54018, 2080, 122], "Zhender1": [8760, 626, 174], "Zhender2": [4483, 322, 65]}}, "2": {"coal": 605884, "hydro": 77608, "lsr": 384737, "diesel": 265705, "naphtha": 0, "wind": 138906, "curtail": 5031, "lsrBtu": 2786866, "oilBtu": 3457571, "napBtu": 0, "loadMWh": 1472840, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [19648, 3948, 35], "Brad": [77608, 5553, 67], "NPCC": [384737, 7884, 9], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [183804, 5185, 173], "NPSC2": [63411, 2115, 106], "Zhender1": [12340, 509, 371], "Zhender2": [6150, 235, 261]}}, "3": {"coal": 615289, "hydro": 77611, "lsr": 390422, "diesel": 246946, "naphtha": 0, "wind": 140038, "curtail": 3899, "lsrBtu": 2815651, "oilBtu": 3203629, "napBtu": 0, "loadMWh": 1470305, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77611, 5599, 71], "NPCC": [390422, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [180810, 5172, 172], "NPSC2": [53755, 1602, 122], "Zhender1": [8213, 525, 174], "Zhender2": [4168, 276, 69]}}, "4": {"coal": 615289, "hydro": 77600, "lsr": 395947, "diesel": 255111, "naphtha": 0, "wind": 140500, "curtail": 3437, "lsrBtu": 2843406, "oilBtu": 3289015, "napBtu": 0, "loadMWh": 1484447, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77600, 5511, 70], "NPCC": [395947, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [187605, 5355, 251], "NPSC2": [53753, 1694, 176], "Zhender1": [9054, 609, 239], "Zhender2": [4698, 322, 79]}}}}, "68": {"0": {"0": {"coal": 615289, "hydro": 89934, "lsr": 361211, "diesel": 211169, "naphtha": 0, "wind": 196494, "curtail": 11140, "lsrBtu": 2667985, "oilBtu": 2793741, "napBtu": 0, "loadMWh": 1474098, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [89934, 7446, 203], "NPCC": [361211, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [154856, 6478, 160], "NPSC2": [50542, 2483, 141], "Zhender1": [3956, 700, 63], "Zhender2": [1815, 329, 64]}}, "1": {"coal": 615289, "hydro": 90917, "lsr": 366348, "diesel": 203505, "naphtha": 0, "wind": 198381, "curtail": 9253, "lsrBtu": 2693960, "oilBtu": 2653387, "napBtu": 0, "loadMWh": 1474439, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [90917, 7446, 204], "NPCC": [366348, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [149782, 5729, 185], "NPSC2": [48331, 2066, 89], "Zhender1": [4016, 442, 141], "Zhender2": [1376, 135, 71]}}, "2": {"coal": 615289, "hydro": 92919, "lsr": 370759, "diesel": 195703, "naphtha": 0, "wind": 199692, "curtail": 7942, "lsrBtu": 2716286, "oilBtu": 2587971, "napBtu": 0, "loadMWh": 1474362, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [92919, 7446, 180], "NPCC": [370759, 7884, 7], "BESS": [0, 0, 259], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [140455, 4910, 195], "NPSC2": [43864, 1723, 108], "Zhender1": [8081, 265, 318], "Zhender2": [3303, 95, 243]}}, "3": {"coal": 615289, "hydro": 93720, "lsr": 372948, "diesel": 192379, "naphtha": 0, "wind": 199983, "curtail": 7651, "lsrBtu": 2727337, "oilBtu": 2492352, "napBtu": 0, "loadMWh": 1474319, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [93720, 7446, 176], "NPCC": [372948, 7884, 7], "BESS": [0, 0, 308], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [141668, 4555, 185], "NPSC2": [45998, 1518, 94], "Zhender1": [3270, 235, 98], "Zhender2": [1443, 87, 64]}}, "4": {"coal": 615289, "hydro": 93937, "lsr": 373817, "diesel": 190917, "naphtha": 0, "wind": 200360, "curtail": 7274, "lsrBtu": 2731712, "oilBtu": 2463514, "napBtu": 0, "loadMWh": 1474320, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [93937, 7446, 175], "NPCC": [373817, 7884, 7], "BESS": [0, 0, 300], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [141385, 4560, 209], "NPSC2": [45174, 1518, 103], "Zhender1": [3071, 235, 97], "Zhender2": [1287, 87, 56]}}}, "36": {"0": {"coal": 615289, "hydro": 76036, "lsr": 339267, "diesel": 177552, "naphtha": 0, "wind": 266062, "curtail": 37422, "lsrBtu": 2557816, "oilBtu": 2378933, "napBtu": 0, "loadMWh": 1474205, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [76036, 7446, 242], "NPCC": [339267, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [132623, 6229, 188], "NPSC2": [40681, 2252, 121], "Zhender1": [2988, 546, 58], "Zhender2": [1260, 220, 47]}}, "1": {"coal": 615289, "hydro": 77583, "lsr": 343981, "diesel": 167712, "naphtha": 0, "wind": 269962, "curtail": 33522, "lsrBtu": 2581673, "oilBtu": 2213469, "napBtu": 0, "loadMWh": 1474527, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [77583, 7446, 239], "NPCC": [343981, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [125986, 5363, 207], "NPSC2": [37661, 1844, 81], "Zhender1": [2949, 290, 118], "Zhender2": [1116, 104, 57]}}, "2": {"coal": 615289, "hydro": 79239, "lsr": 348874, "diesel": 157979, "naphtha": 0, "wind": 273045, "curtail": 30439, "lsrBtu": 2606310, "oilBtu": 2132980, "napBtu": 0, "loadMWh": 1474444, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [79239, 7446, 238], "NPCC": [348874, 7884, 7], "BESS": [19, 0, 227], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [114233, 4272, 224], "NPSC2": [32012, 1363, 103], "Zhender1": [8028, 158, 385], "Zhender2": [3707, 75, 291]}}, "3": {"coal": 615289, "hydro": 80648, "lsr": 351154, "diesel": 152862, "naphtha": 0, "wind": 274401, "curtail": 29083, "lsrBtu": 2617753, "oilBtu": 1997375, "napBtu": 0, "loadMWh": 1474394, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [80648, 7446, 233], "NPCC": [351154, 7884, 7], "BESS": [40, 0, 280], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [114326, 3568, 201], "NPSC2": [35071, 975, 93], "Zhender1": [2260, 127, 80], "Zhender2": [1204, 55, 53]}}, "4": {"coal": 615289, "hydro": 82527, "lsr": 356543, "diesel": 158860, "naphtha": 0, "wind": 276952, "curtail": 26532, "lsrBtu": 2645039, "oilBtu": 2058554, "napBtu": 0, "loadMWh": 1490170, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [82527, 7446, 226], "NPCC": [356543, 7884, 7], "BESS": [0, 0, 332], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [119269, 3665, 261], "NPSC2": [35324, 1091, 123], "Zhender1": [2850, 168, 114], "Zhender2": [1417, 81, 61]}}}}, "104": {"0": {"0": {"coal": 615289, "hydro": 78779, "lsr": 345257, "diesel": 191366, "naphtha": 0, "wind": 243471, "curtail": 38762, "lsrBtu": 2587956, "oilBtu": 2555515, "napBtu": 0, "loadMWh": 1474162, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [78779, 7446, 276], "NPCC": [345257, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [140330, 6389, 182], "NPSC2": [45775, 2367, 127], "Zhender1": [3691, 667, 60], "Zhender2": [1571, 276, 54]}}, "1": {"coal": 615289, "hydro": 79359, "lsr": 350231, "diesel": 183065, "naphtha": 0, "wind": 246580, "curtail": 35653, "lsrBtu": 2613086, "oilBtu": 2409830, "napBtu": 0, "loadMWh": 1474523, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [79359, 7446, 279], "NPCC": [350231, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [134809, 5591, 195], "NPSC2": [43198, 1978, 78], "Zhender1": [3674, 383, 136], "Zhender2": [1384, 129, 73]}}, "2": {"coal": 615289, "hydro": 81129, "lsr": 355198, "diesel": 172478, "naphtha": 0, "wind": 250343, "curtail": 31890, "lsrBtu": 2638229, "oilBtu": 2317313, "napBtu": 0, "loadMWh": 1474437, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [81129, 7446, 270], "NPCC": [355198, 7884, 7], "BESS": [0, 0, 289], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [122318, 4542, 224], "NPSC2": [37438, 1506, 104], "Zhender1": [8907, 203, 372], "Zhender2": [3815, 80, 305]}}, "3": {"coal": 615289, "hydro": 82109, "lsr": 357447, "diesel": 168027, "naphtha": 0, "wind": 251489, "curtail": 30744, "lsrBtu": 2649565, "oilBtu": 2195414, "napBtu": 0, "loadMWh": 1474360, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [82109, 7446, 254], "NPCC": [357447, 7884, 7], "BESS": [0, 0, 326], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [123609, 3813, 212], "NPSC2": [40030, 1057, 92], "Zhender1": [2906, 159, 91], "Zhender2": [1483, 62, 70]}}, "4": {"coal": 615289, "hydro": 82767, "lsr": 357748, "diesel": 165630, "naphtha": 0, "wind": 252920, "curtail": 29313, "lsrBtu": 2651055, "oilBtu": 2156199, "napBtu": 0, "loadMWh": 1474353, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [82767, 7446, 252], "NPCC": [357748, 7884, 7], "BESS": [0, 0, 328], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [122451, 3821, 238], "NPSC2": [39022, 1062, 101], "Zhender1": [2788, 159, 89], "Zhender2": [1369, 62, 70]}}}, "36": {"0": {"coal": 615289, "hydro": 66465, "lsr": 325711, "diesel": 165088, "naphtha": 0, "wind": 301707, "curtail": 76376, "lsrBtu": 2489783, "oilBtu": 2242996, "napBtu": 0, "loadMWh": 1474259, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [66465, 7446, 288], "NPCC": [325711, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [121510, 6197, 198], "NPSC2": [39226, 2325, 131], "Zhender1": [3050, 584, 59], "Zhender2": [1301, 238, 52]}}, "1": {"coal": 615289, "hydro": 67903, "lsr": 329979, "diesel": 154104, "naphtha": 0, "wind": 307291, "curtail": 70792, "lsrBtu": 2511341, "oilBtu": 2058123, "napBtu": 0, "loadMWh": 1474566, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [67903, 7446, 280], "NPCC": [329979, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [114761, 5322, 201], "NPSC2": [35406, 1848, 91], "Zhender1": [2849, 296, 114], "Zhender2": [1088, 104, 52]}}, "2": {"coal": 615289, "hydro": 70223, "lsr": 334592, "diesel": 142198, "naphtha": 0, "wind": 312189, "curtail": 65894, "lsrBtu": 2534591, "oilBtu": 1950873, "napBtu": 0, "loadMWh": 1474490, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [70223, 7446, 266], "NPCC": [334592, 7884, 7], "BESS": [0, 0, 242], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [101076, 4074, 245], "NPSC2": [28816, 1300, 97], "Zhender1": [8498, 144, 398], "Zhender2": [3807, 54, 310]}}, "3": {"coal": 615289, "hydro": 71469, "lsr": 336713, "diesel": 136112, "naphtha": 0, "wind": 314888, "curtail": 63195, "lsrBtu": 2545262, "oilBtu": 1795187, "napBtu": 0, "loadMWh": 1474471, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [71469, 7446, 263], "NPCC": [336713, 7884, 7], "BESS": [0, 0, 278], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [101005, 2947, 214], "NPSC2": [31945, 787, 91], "Zhender1": [2115, 103, 86], "Zhender2": [1048, 40, 55]}}, "4": {"coal": 615289, "hydro": 73471, "lsr": 341401, "diesel": 139423, "naphtha": 0, "wind": 320699, "curtail": 57384, "lsrBtu": 2568938, "oilBtu": 1825447, "napBtu": 0, "loadMWh": 1490283, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [73471, 7446, 270], "NPCC": [341401, 7884, 7], "BESS": [0, 0, 330], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [103988, 3018, 284], "NPSC2": [31207, 863, 117], "Zhender1": [2791, 140, 109], "Zhender2": [1437, 61, 67]}}}}, "120": {"0": {"0": {"coal": 615289, "hydro": 74047, "lsr": 338747, "diesel": 184973, "naphtha": 0, "wind": 261135, "curtail": 58224, "lsrBtu": 2555253, "oilBtu": 2484707, "napBtu": 0, "loadMWh": 1474191, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [74047, 7446, 308], "NPCC": [338747, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [134900, 6383, 180], "NPSC2": [44817, 2398, 128], "Zhender1": [3690, 679, 62], "Zhender2": [1567, 285, 60]}}, "1": {"coal": 615289, "hydro": 75511, "lsr": 343328, "diesel": 174957, "naphtha": 0, "wind": 265478, "curtail": 53881, "lsrBtu": 2578409, "oilBtu": 2312483, "napBtu": 0, "loadMWh": 1474563, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [75511, 7446, 302], "NPCC": [343328, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [128907, 5523, 203], "NPSC2": [41268, 1962, 74], "Zhender1": [3522, 364, 136], "Zhender2": [1260, 111, 72]}}, "2": {"coal": 615289, "hydro": 77376, "lsr": 348368, "diesel": 163396, "naphtha": 0, "wind": 270045, "curtail": 49314, "lsrBtu": 2603869, "oilBtu": 2211178, "napBtu": 0, "loadMWh": 1474474, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [77376, 7446, 278], "NPCC": [348368, 7884, 7], "BESS": [0, 0, 298], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [114980, 4369, 236], "NPSC2": [35167, 1447, 98], "Zhender1": [9337, 188, 394], "Zhender2": [3913, 62, 315]}}, "3": {"coal": 615289, "hydro": 78327, "lsr": 350772, "diesel": 158001, "naphtha": 0, "wind": 272026, "curtail": 47333, "lsrBtu": 2615970, "oilBtu": 2068211, "napBtu": 0, "loadMWh": 1474415, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [78327, 7446, 267], "NPCC": [350772, 7884, 7], "BESS": [0, 0, 345], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [115822, 3423, 224], "NPSC2": [38111, 960, 92], "Zhender1": [2733, 141, 97], "Zhender2": [1336, 49, 64]}}, "4": {"coal": 615289, "hydro": 78657, "lsr": 351165, "diesel": 155463, "naphtha": 0, "wind": 273843, "curtail": 45516, "lsrBtu": 2617946, "oilBtu": 2028390, "napBtu": 0, "loadMWh": 1474417, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [78657, 7446, 280], "NPCC": [351165, 7884, 7], "BESS": [0, 0, 347], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [114699, 3423, 248], "NPSC2": [36779, 964, 100], "Zhender1": [2689, 141, 95], "Zhender2": [1296, 49, 64]}}}, "36": {"0": {"coal": 615289, "hydro": 62852, "lsr": 320515, "diesel": 160865, "naphtha": 0, "wind": 314757, "curtail": 100452, "lsrBtu": 2463696, "oilBtu": 2199359, "napBtu": 0, "loadMWh": 1474278, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [62852, 7446, 319], "NPCC": [320515, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [117552, 6199, 195], "NPSC2": [38805, 2364, 137], "Zhender1": [3184, 626, 70], "Zhender2": [1323, 250, 58]}}, "1": {"coal": 615289, "hydro": 64206, "lsr": 324519, "diesel": 149384, "naphtha": 0, "wind": 321181, "curtail": 94028, "lsrBtu": 2483922, "oilBtu": 2005865, "napBtu": 0, "loadMWh": 1474578, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [64206, 7446, 315], "NPCC": [324519, 7884, 7], "BESS": [0, 0, 0], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [110643, 5320, 197], "NPSC2": [34847, 1878, 86], "Zhender1": [2813, 298, 115], "Zhender2": [1081, 104, 53]}}, "2": {"coal": 615289, "hydro": 66496, "lsr": 328912, "diesel": 136726, "naphtha": 0, "wind": 327074, "curtail": 88135, "lsrBtu": 2506053, "oilBtu": 1889752, "napBtu": 0, "loadMWh": 1474497, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [66496, 7446, 288], "NPCC": [328912, 7884, 7], "BESS": [0, 0, 243], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [96342, 4015, 250], "NPSC2": [27820, 1284, 93], "Zhender1": [8669, 142, 411], "Zhender2": [3894, 51, 330]}}, "3": {"coal": 615289, "hydro": 67704, "lsr": 330998, "diesel": 130336, "naphtha": 0, "wind": 330159, "curtail": 85050, "lsrBtu": 2516525, "oilBtu": 1727835, "napBtu": 0, "loadMWh": 1474486, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [67704, 7446, 284], "NPCC": [330998, 7884, 7], "BESS": [0, 0, 282], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [96279, 2723, 214], "NPSC2": [30920, 753, 91], "Zhender1": [2097, 96, 89], "Zhender2": [1039, 36, 51]}}, "4": {"coal": 615289, "hydro": 69220, "lsr": 335608, "diesel": 133439, "naphtha": 0, "wind": 336751, "curtail": 78458, "lsrBtu": 2539826, "oilBtu": 1755586, "napBtu": 0, "loadMWh": 1490307, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [69220, 7446, 283], "NPCC": [335608, 7884, 7], "BESS": [0, 0, 315], "NPCC2": [0, 0, 0], "SouthCen": [0, 8498, 0], "NPSC1": [99436, 2798, 285], "NPSC2": [29850, 806, 119], "Zhender1": [2714, 135, 103], "Zhender2": [1440, 55, 70]}}}}}, "yes": {"0": {"0": {"0": {"coal": 615289, "hydro": 77611, "lsr": 420893, "diesel": 99472, "naphtha": 214293, "wind": 47091, "curtail": 996, "lsrBtu": 3062260, "oilBtu": 1294720, "napBtu": 1680541, "loadMWh": 1474648, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77611, 5459, 40], "NPCC": [420893, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [214293, 5586, 143], "SouthCen": [0, 8498, 0], "NPSC1": [67032, 2773, 110], "NPSC2": [29911, 1053, 55], "Zhender1": [1863, 237, 26], "Zhender2": [665, 107, 26]}}, "1": {"coal": 615289, "hydro": 77611, "lsr": 430128, "diesel": 98344, "naphtha": 206127, "wind": 47495, "curtail": 592, "lsrBtu": 3108700, "oilBtu": 1276529, "napBtu": 1602843, "loadMWh": 1474994, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77611, 5319, 24], "NPCC": [430128, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [206127, 5247, 157], "SouthCen": [0, 8498, 0], "NPSC1": [66371, 2620, 101], "NPSC2": [28883, 927, 45], "Zhender1": [2509, 186, 134], "Zhender2": [581, 44, 44]}}, "2": {"coal": 605884, "hydro": 77601, "lsr": 431851, "diesel": 119548, "naphtha": 192998, "wind": 47437, "curtail": 650, "lsrBtu": 3117365, "oilBtu": 1546750, "napBtu": 1502769, "loadMWh": 1475318, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [19648, 3948, 35], "Brad": [77601, 5295, 18], "NPCC": [431851, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [192998, 4929, 149], "SouthCen": [0, 8498, 0], "NPSC1": [90083, 3381, 73], "NPSC2": [26557, 1029, 50], "Zhender1": [2577, 211, 143], "Zhender2": [330, 20, 33]}}, "3": {"coal": 615289, "hydro": 77602, "lsr": 430415, "diesel": 98511, "naphtha": 205617, "wind": 47544, "curtail": 543, "lsrBtu": 3110127, "oilBtu": 1279225, "napBtu": 1598439, "loadMWh": 1474977, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77602, 5315, 23], "NPCC": [430415, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [205617, 5230, 158], "SouthCen": [0, 8498, 0], "NPSC1": [66541, 2597, 112], "NPSC2": [28883, 915, 45], "Zhender1": [2482, 186, 134], "Zhender2": [605, 43, 46]}}, "4": {"coal": 615289, "hydro": 77602, "lsr": 430545, "diesel": 98196, "naphtha": 205805, "wind": 47544, "curtail": 543, "lsrBtu": 3110796, "oilBtu": 1273932, "napBtu": 1599403, "loadMWh": 1474981, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77602, 5315, 23], "NPCC": [430545, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [205805, 5230, 158], "SouthCen": [0, 8498, 0], "NPSC1": [66291, 2597, 99], "NPSC2": [28813, 915, 46], "Zhender1": [2507, 186, 134], "Zhender2": [585, 43, 45]}}}, "36": {"0": {"coal": 615289, "hydro": 77612, "lsr": 386521, "diesel": 73973, "naphtha": 193673, "wind": 127414, "curtail": 16523, "lsrBtu": 2889658, "oilBtu": 993906, "napBtu": 1553494, "loadMWh": 1474483, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77612, 6523, 196], "NPCC": [386521, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [193673, 5364, 178], "SouthCen": [0, 8498, 0], "NPSC1": [49452, 2546, 104], "NPSC2": [22484, 933, 56], "Zhender1": [1467, 275, 24], "Zhender2": [570, 95, 24]}}, "1": {"coal": 615289, "hydro": 77609, "lsr": 398410, "diesel": 72997, "naphtha": 177990, "wind": 132733, "curtail": 11204, "lsrBtu": 2949487, "oilBtu": 978345, "napBtu": 1408076, "loadMWh": 1475029, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77609, 6040, 162], "NPCC": [398410, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [177990, 4749, 190], "SouthCen": [0, 8498, 0], "NPSC1": [48900, 2373, 98], "NPSC2": [21268, 770, 49], "Zhender1": [2269, 161, 168], "Zhender2": [560, 27, 56]}}, "2": {"coal": 605884, "hydro": 77602, "lsr": 408797, "diesel": 94983, "naphtha": 151204, "wind": 137008, "curtail": 6929, "lsrBtu": 3001532, "oilBtu": 1315232, "napBtu": 1184470, "loadMWh": 1475478, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [19648, 3948, 35], "Brad": [77602, 5683, 95], "NPCC": [408797, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [151204, 3928, 197], "SouthCen": [0, 8498, 0], "NPSC1": [69419, 3097, 71], "NPSC2": [17528, 740, 62], "Zhender1": [5921, 98, 345], "Zhender2": [2115, 4, 213]}}, "3": {"coal": 615289, "hydro": 77607, "lsr": 403473, "diesel": 81265, "naphtha": 160241, "wind": 137144, "curtail": 6793, "lsrBtu": 2974818, "oilBtu": 1100108, "napBtu": 1251252, "loadMWh": 1475019, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77607, 5739, 107], "NPCC": [403473, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [160241, 4125, 198], "SouthCen": [0, 8498, 0], "NPSC1": [56925, 2232, 247], "NPSC2": [21566, 621, 65], "Zhender1": [2145, 69, 167], "Zhender2": [628, 19, 62]}}, "4": {"coal": 615289, "hydro": 77624, "lsr": 409338, "diesel": 82448, "naphtha": 168436, "wind": 138040, "curtail": 5897, "lsrBtu": 3004209, "oilBtu": 1102693, "napBtu": 1314331, "loadMWh": 1491174, "gens": {"H2": [255800, 6395, 12], "H1": [188350, 7534, 10], "AUR20": [113788, 5694, 25], "AUR5": [28298, 5670, 22], "UAF": [29053, 5829, 32], "Brad": [77624, 5647, 102], "NPCC": [409338, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [168436, 4328, 239], "SouthCen": [0, 8498, 0], "NPSC1": [57297, 2354, 254], "NPSC2": [21872, 708, 61], "Zhender1": [2485, 109, 206], "Zhender2": [794, 25, 62]}}}}, "68": {"0": {"0": {"coal": 615289, "hydro": 73935, "lsr": 361282, "diesel": 59682, "naphtha": 187263, "wind": 177445, "curtail": 30189, "lsrBtu": 2762766, "oilBtu": 814481, "napBtu": 1525820, "loadMWh": 1474896, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [73935, 7446, 323], "NPCC": [361282, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [187263, 5406, 183], "SouthCen": [0, 8498, 0], "NPSC1": [43403, 2273, 119], "NPSC2": [14448, 837, 67], "Zhender1": [1226, 174, 11], "Zhender2": [604, 92, 16]}}, "1": {"coal": 615289, "hydro": 79272, "lsr": 372839, "diesel": 55383, "naphtha": 166821, "wind": 185666, "curtail": 21968, "lsrBtu": 2820789, "oilBtu": 750076, "napBtu": 1342585, "loadMWh": 1475270, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [79272, 7446, 315], "NPCC": [372839, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [166821, 4662, 183], "SouthCen": [0, 8498, 0], "NPSC1": [40101, 1826, 79], "NPSC2": [12627, 639, 64], "Zhender1": [1905, 111, 111], "Zhender2": [750, 59, 58]}}, "2": {"coal": 615289, "hydro": 83644, "lsr": 383246, "diesel": 54795, "naphtha": 145954, "wind": 192194, "curtail": 15440, "lsrBtu": 2873113, "oilBtu": 782850, "napBtu": 1159228, "loadMWh": 1475122, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [83644, 7446, 280], "NPCC": [383246, 8760, 0], "BESS": [0, 0, 216], "NPCC2": [145954, 3937, 189], "SouthCen": [0, 8498, 0], "NPSC1": [36499, 1475, 104], "NPSC2": [10242, 420, 46], "Zhender1": [5797, 84, 294], "Zhender2": [2257, 43, 203]}}, "3": {"coal": 615289, "hydro": 86117, "lsr": 387609, "diesel": 54436, "naphtha": 137109, "wind": 194460, "curtail": 13174, "lsrBtu": 2894980, "oilBtu": 730508, "napBtu": 1081018, "loadMWh": 1475018, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [86117, 7446, 272], "NPCC": [387609, 8760, 0], "BESS": [0, 0, 277], "NPCC2": [137109, 3625, 190], "SouthCen": [0, 8498, 0], "NPSC1": [40666, 1320, 194], "NPSC2": [11967, 359, 65], "Zhender1": [1234, 80, 46], "Zhender2": [568, 39, 30]}}, "4": {"coal": 615289, "hydro": 86280, "lsr": 388437, "diesel": 52663, "naphtha": 137832, "wind": 194518, "curtail": 13116, "lsrBtu": 2899132, "oilBtu": 702683, "napBtu": 1085974, "loadMWh": 1475018, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [86280, 7446, 272], "NPCC": [388437, 8760, 0], "BESS": [0, 0, 276], "NPCC2": [137832, 3637, 189], "SouthCen": [0, 8498, 0], "NPSC1": [39375, 1320, 176], "NPSC2": [11489, 359, 62], "Zhender1": [1230, 80, 45], "Zhender2": [568, 39, 30]}}}, "36": {"0": {"coal": 615289, "hydro": 60734, "lsr": 342332, "diesel": 51079, "naphtha": 174986, "wind": 230536, "curtail": 72948, "lsrBtu": 2667577, "oilBtu": 713441, "napBtu": 1443436, "loadMWh": 1474956, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [60734, 7446, 302], "NPCC": [342332, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [174986, 5215, 191], "SouthCen": [0, 8498, 0], "NPSC1": [36855, 2333, 137], "NPSC2": [12814, 789, 70], "Zhender1": [952, 147, 10], "Zhender2": [458, 82, 14]}}, "1": {"coal": 615289, "hydro": 65711, "lsr": 352146, "diesel": 45140, "naphtha": 151674, "wind": 245312, "curtail": 58172, "lsrBtu": 2716935, "oilBtu": 623047, "napBtu": 1236903, "loadMWh": 1475272, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [65711, 7446, 319], "NPCC": [352146, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [151674, 4389, 188], "SouthCen": [0, 8498, 0], "NPSC1": [32542, 1789, 95], "NPSC2": [10402, 513, 60], "Zhender1": [1562, 88, 96], "Zhender2": [635, 49, 47]}}, "2": {"coal": 615289, "hydro": 72002, "lsr": 362190, "diesel": 42980, "naphtha": 122698, "wind": 259993, "curtail": 43491, "lsrBtu": 2767359, "oilBtu": 642997, "napBtu": 982716, "loadMWh": 1475157, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [72002, 7446, 299], "NPCC": [362190, 8760, 0], "BESS": [5, 0, 185], "NPCC2": [122698, 3386, 211], "SouthCen": [0, 8498, 0], "NPSC1": [26311, 1218, 92], "NPSC2": [8084, 317, 35], "Zhender1": [6120, 66, 348], "Zhender2": [2465, 28, 254]}}, "3": {"coal": 615289, "hydro": 75670, "lsr": 368191, "diesel": 43745, "naphtha": 104758, "wind": 267440, "curtail": 36044, "lsrBtu": 2797429, "oilBtu": 597977, "napBtu": 825459, "loadMWh": 1475111, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [75670, 7446, 280], "NPCC": [368191, 8760, 0], "BESS": [18, 0, 239], "NPCC2": [104758, 2766, 180], "SouthCen": [0, 8498, 0], "NPSC1": [32419, 867, 210], "NPSC2": [9897, 245, 68], "Zhender1": [999, 53, 50], "Zhender2": [431, 25, 25]}}, "4": {"coal": 615289, "hydro": 77955, "lsr": 374757, "diesel": 44435, "naphtha": 108666, "wind": 270039, "curtail": 33445, "lsrBtu": 2830675, "oilBtu": 600318, "napBtu": 851184, "loadMWh": 1491141, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [77955, 7446, 270], "NPCC": [374757, 8760, 0], "BESS": [0, 0, 305], "NPCC2": [108666, 2822, 212], "SouthCen": [0, 8498, 0], "NPSC1": [32046, 966, 238], "NPSC2": [10524, 300, 70], "Zhender1": [1124, 59, 57], "Zhender2": [741, 42, 31]}}}}, "104": {"0": {"0": {"coal": 615289, "hydro": 64512, "lsr": 347207, "diesel": 58723, "naphtha": 181361, "wind": 207816, "curtail": 74417, "lsrBtu": 2692055, "oilBtu": 815544, "napBtu": 1493194, "loadMWh": 1474908, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [64512, 7446, 370], "NPCC": [347207, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [181361, 5378, 184], "SouthCen": [0, 8498, 0], "NPSC1": [42515, 2540, 159], "NPSC2": [14314, 881, 77], "Zhender1": [1194, 184, 15], "Zhender2": [700, 122, 19]}}, "1": {"coal": 615289, "hydro": 70198, "lsr": 358233, "diesel": 51674, "naphtha": 158560, "wind": 221306, "curtail": 60927, "lsrBtu": 2747429, "oilBtu": 708189, "napBtu": 1290160, "loadMWh": 1475260, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [70198, 7446, 346], "NPCC": [358233, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [158560, 4561, 186], "SouthCen": [0, 8498, 0], "NPSC1": [37255, 1904, 97], "NPSC2": [11898, 615, 66], "Zhender1": [1767, 104, 106], "Zhender2": [755, 56, 60]}}, "2": {"coal": 615289, "hydro": 74820, "lsr": 369448, "diesel": 50246, "naphtha": 130064, "wind": 235273, "curtail": 46960, "lsrBtu": 2803897, "oilBtu": 742885, "napBtu": 1040316, "loadMWh": 1475140, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [74820, 7446, 314], "NPCC": [369448, 8760, 0], "BESS": [0, 0, 228], "NPCC2": [130064, 3576, 215], "SouthCen": [0, 8498, 0], "NPSC1": [31283, 1351, 99], "NPSC2": [9168, 369, 37], "Zhender1": [6967, 69, 347], "Zhender2": [2827, 33, 257]}}, "3": {"coal": 615289, "hydro": 77482, "lsr": 374640, "diesel": 53797, "naphtha": 111120, "wind": 242735, "curtail": 39498, "lsrBtu": 2829999, "oilBtu": 730640, "napBtu": 877044, "loadMWh": 1475064, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [77482, 7446, 287], "NPCC": [374640, 8760, 0], "BESS": [0, 0, 285], "NPCC2": [111120, 2947, 193], "SouthCen": [0, 8498, 0], "NPSC1": [39842, 954, 205], "NPSC2": [12132, 264, 74], "Zhender1": [1188, 61, 52], "Zhender2": [636, 29, 39]}}, "4": {"coal": 615289, "hydro": 77964, "lsr": 375177, "diesel": 51278, "naphtha": 111221, "wind": 244135, "curtail": 38098, "lsrBtu": 2832699, "oilBtu": 692520, "napBtu": 877661, "loadMWh": 1475064, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [77964, 7446, 295], "NPCC": [375177, 8760, 0], "BESS": [0, 0, 284], "NPCC2": [111221, 2948, 193], "SouthCen": [0, 8498, 0], "NPSC1": [38013, 957, 215], "NPSC2": [11442, 264, 71], "Zhender1": [1188, 61, 52], "Zhender2": [636, 29, 39]}}}, "36": {"0": {"coal": 615289, "hydro": 53298, "lsr": 330215, "diesel": 52409, "naphtha": 170327, "wind": 253433, "curtail": 124650, "lsrBtu": 2606774, "oilBtu": 742417, "napBtu": 1417291, "loadMWh": 1474970, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [53298, 7446, 352], "NPCC": [330215, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [170327, 5189, 198], "SouthCen": [0, 8498, 0], "NPSC1": [37784, 2591, 170], "NPSC2": [13056, 852, 78], "Zhender1": [1030, 177, 14], "Zhender2": [539, 109, 20]}}, "1": {"coal": 615289, "hydro": 58012, "lsr": 339155, "diesel": 44580, "naphtha": 146330, "wind": 271892, "curtail": 106191, "lsrBtu": 2651669, "oilBtu": 622675, "napBtu": 1205339, "loadMWh": 1475257, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [58012, 7446, 325], "NPCC": [339155, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [146330, 4345, 184], "SouthCen": [0, 8498, 0], "NPSC1": [32072, 1935, 114], "NPSC2": [10438, 572, 67], "Zhender1": [1461, 88, 89], "Zhender2": [609, 50, 43]}}, "2": {"coal": 615289, "hydro": 63899, "lsr": 349223, "diesel": 41031, "naphtha": 114023, "wind": 291683, "curtail": 86400, "lsrBtu": 2702286, "oilBtu": 628692, "napBtu": 922691, "loadMWh": 1475147, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [63899, 7446, 318], "NPCC": [349223, 8760, 0], "BESS": [0, 0, 178], "NPCC2": [114023, 3234, 223], "SouthCen": [0, 8498, 0], "NPSC1": [23721, 1159, 97], "NPSC2": [7829, 331, 34], "Zhender1": [6743, 64, 357], "Zhender2": [2738, 23, 265]}}, "3": {"coal": 615289, "hydro": 66902, "lsr": 355723, "diesel": 45462, "naphtha": 87155, "wind": 304581, "curtail": 73502, "lsrBtu": 2734928, "oilBtu": 628252, "napBtu": 690911, "loadMWh": 1475111, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [66902, 7446, 300], "NPCC": [355723, 8760, 0], "BESS": [0, 0, 230], "NPCC2": [87155, 2340, 174], "SouthCen": [0, 8498, 0], "NPSC1": [33619, 657, 213], "NPSC2": [10325, 204, 72], "Zhender1": [1020, 50, 51], "Zhender2": [498, 19, 35]}}, "4": {"coal": 615289, "hydro": 68599, "lsr": 361882, "diesel": 44466, "naphtha": 90990, "wind": 309984, "curtail": 68099, "lsrBtu": 2766061, "oilBtu": 609739, "napBtu": 716366, "loadMWh": 1491209, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [68599, 7446, 314], "NPCC": [361882, 8760, 0], "BESS": [0, 0, 282], "NPCC2": [90990, 2397, 191], "SouthCen": [0, 8498, 0], "NPSC1": [31739, 712, 292], "NPSC2": [10825, 258, 83], "Zhender1": [1193, 56, 68], "Zhender2": [709, 39, 33]}}}}, "120": {"0": {"0": {"coal": 615289, "hydro": 60686, "lsr": 341316, "diesel": 58509, "naphtha": 179712, "wind": 219396, "curtail": 99963, "lsrBtu": 2662510, "oilBtu": 818213, "napBtu": 1484388, "loadMWh": 1474909, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [60686, 7446, 394], "NPCC": [341316, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [179712, 5373, 182], "SouthCen": [0, 8498, 0], "NPSC1": [42169, 2630, 163], "NPSC2": [14425, 915, 77], "Zhender1": [1228, 200, 18], "Zhender2": [687, 128, 21]}}, "1": {"coal": 615289, "hydro": 66203, "lsr": 352046, "diesel": 51319, "naphtha": 156464, "wind": 233961, "curtail": 85398, "lsrBtu": 2716416, "oilBtu": 708315, "napBtu": 1278247, "loadMWh": 1475281, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [66203, 7446, 368], "NPCC": [352046, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [156464, 4548, 186], "SouthCen": [0, 8498, 0], "NPSC1": [37030, 2007, 110], "NPSC2": [11760, 629, 70], "Zhender1": [1763, 105, 105], "Zhender2": [765, 56, 63]}}, "2": {"coal": 615289, "hydro": 70774, "lsr": 363550, "diesel": 48881, "naphtha": 125858, "wind": 250795, "curtail": 68564, "lsrBtu": 2774343, "oilBtu": 732584, "napBtu": 1010220, "loadMWh": 1475148, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [70774, 7446, 327], "NPCC": [363550, 8760, 0], "BESS": [0, 0, 232], "NPCC2": [125858, 3493, 215], "SouthCen": [0, 8498, 0], "NPSC1": [29616, 1336, 106], "NPSC2": [8890, 369, 42], "Zhender1": [7318, 67, 346], "Zhender2": [3058, 29, 269]}}, "3": {"coal": 615289, "hydro": 73341, "lsr": 369716, "diesel": 53772, "naphtha": 102091, "wind": 260867, "curtail": 58492, "lsrBtu": 2805308, "oilBtu": 733498, "napBtu": 806254, "loadMWh": 1475076, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [73341, 7446, 317], "NPCC": [369716, 8760, 0], "BESS": [0, 0, 298], "NPCC2": [102091, 2712, 191], "SouthCen": [0, 8498, 0], "NPSC1": [39775, 864, 206], "NPSC2": [12190, 241, 80], "Zhender1": [1175, 57, 58], "Zhender2": [632, 25, 38]}}, "4": {"coal": 615289, "hydro": 73622, "lsr": 370159, "diesel": 50891, "naphtha": 102139, "wind": 262976, "curtail": 56383, "lsrBtu": 2807522, "oilBtu": 689988, "napBtu": 806497, "loadMWh": 1475076, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [73622, 7446, 323], "NPCC": [370159, 8760, 0], "BESS": [0, 0, 301], "NPCC2": [102139, 2712, 191], "SouthCen": [0, 8498, 0], "NPSC1": [37652, 864, 227], "NPSC2": [11440, 241, 75], "Zhender1": [1167, 57, 57], "Zhender2": [632, 25, 38]}}}, "36": {"0": {"coal": 615289, "hydro": 50002, "lsr": 325679, "diesel": 52928, "naphtha": 169151, "wind": 261929, "curtail": 153280, "lsrBtu": 2584096, "oilBtu": 753544, "napBtu": 1411209, "loadMWh": 1474978, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [50002, 7446, 374], "NPCC": [325679, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [169151, 5187, 196], "SouthCen": [0, 8498, 0], "NPSC1": [37856, 2667, 175], "NPSC2": [13507, 914, 88], "Zhender1": [1042, 186, 17], "Zhender2": [522, 111, 22]}}, "1": {"coal": 615289, "hydro": 54520, "lsr": 334145, "diesel": 44803, "naphtha": 145012, "wind": 281483, "curtail": 133726, "lsrBtu": 2626592, "oilBtu": 629003, "napBtu": 1198318, "loadMWh": 1475252, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [54520, 7446, 356], "NPCC": [334145, 8760, 0], "BESS": [0, 0, 0], "NPCC2": [145012, 4341, 181], "SouthCen": [0, 8498, 0], "NPSC1": [32156, 2010, 126], "NPSC2": [10610, 608, 70], "Zhender1": [1424, 89, 89], "Zhender2": [613, 51, 42]}}, "2": {"coal": 615289, "hydro": 60323, "lsr": 344253, "diesel": 40579, "naphtha": 111224, "wind": 303480, "curtail": 111729, "lsrBtu": 2677404, "oilBtu": 626484, "napBtu": 902930, "loadMWh": 1475147, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [60323, 7446, 341], "NPCC": [344253, 8760, 0], "BESS": [0, 0, 181], "NPCC2": [111224, 3181, 230], "SouthCen": [0, 8498, 0], "NPSC1": [23143, 1159, 98], "NPSC2": [7785, 346, 37], "Zhender1": [6866, 61, 372], "Zhender2": [2784, 20, 281]}}, "3": {"coal": 615289, "hydro": 63344, "lsr": 351044, "diesel": 46736, "naphtha": 79906, "wind": 318779, "curtail": 96430, "lsrBtu": 2711456, "oilBtu": 649360, "napBtu": 634376, "loadMWh": 1475098, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [63344, 7446, 320], "NPCC": [351044, 8760, 0], "BESS": [0, 0, 235], "NPCC2": [79906, 2154, 174], "SouthCen": [0, 8498, 0], "NPSC1": [34569, 622, 213], "NPSC2": [10560, 202, 83], "Zhender1": [1073, 46, 62], "Zhender2": [534, 16, 36]}}, "4": {"coal": 615289, "hydro": 64871, "lsr": 356846, "diesel": 45419, "naphtha": 84007, "wind": 324755, "curtail": 90454, "lsrBtu": 2740831, "oilBtu": 625857, "napBtu": 662562, "loadMWh": 1491187, "gens": {"H2": [255800, 8760, 12], "H1": [188350, 8760, 10], "AUR20": [113788, 8760, 25], "AUR5": [28298, 8760, 22], "UAF": [29053, 8760, 32], "Brad": [64871, 7446, 318], "NPCC": [356846, 8760, 0], "BESS": [0, 0, 266], "NPCC2": [84007, 2224, 183], "SouthCen": [0, 8498, 0], "NPSC1": [32565, 649, 288], "NPSC2": [10958, 246, 92], "Zhender1": [1198, 55, 71], "Zhender2": [698, 35, 33]}}}}}};  // [lm][shovelCap][deltaCap][opLevel] dispatch mix, curtail, loadMWh, gens{unit:[out,hrs,starts]}
+const GENS = ["H2", "H1", "AUR20", "AUR5", "UAF", "Brad", "NPCC", "BESS", "NPCC2", "SouthCen", "NPSC1", "NPSC2", "Zhender1", "Zhender2"];  // generator unit ids as modeled
 const DELTA_MW = 36;
 
 // fuel energy densities (Btu/gal) from GVEA's 2025 RCA filing
 const BTU_PER_GAL = {diesel:128422, naphtha:102268, lsr:102268};
+// CO2 emission factors, kg CO2e per MMBtu of fuel (EPA defaults: distillate 73.96, naphtha/LSR ~68, sub-bituminous coal ~97.2)
+const CO2_KG_PER_MMBTU = {diesel:73.96, naphtha:68.02, lsr:68.02, coal:97.2};
+const COAL_HR_MMBTU_PER_MWH = 11.5; // ~11,500 Btu/kWh — typical heat rate for the Interior coal units GVEA draws on
 // dispatched-mix display order, labels and colors
 const FUELS = [
   {k:'coal',    nm:'Coal',    col:'#6b7785'},
@@ -487,7 +567,10 @@ const FUELS = [
   {k:'wind',    nm:'Wind',    col:'#1f9d63'}
 ];
 // ---- state ----  (sell = Commercial enabler, independent of the operational chain; both default on)
-const S = {cap:120, lm:'yes', bessFree:true, oil:25, salePrice:10, delta:false, zhender:true, backupZ:true, npsc:true, realtime:true, sell:true}; // salePrice in ¢/kWh
+const S = {cap:120, lm:'yes', bessFree:true, oil:25, salePrice:10, delta:false, zhender:true, backupZ:true, npsc:true, realtime:true, sell:true, lngPrice:20}; // salePrice in ¢/kWh, lngPrice in $/MCF
+// Southcentral gas-offset constants
+const SC_HEATRATE = 6824;      // Btu/kWh — ~50%-efficient LM6000 combined cycle (HHV, 3412.14/0.50)
+const SC_BTU_PER_MCF = 1037000; // Btu per MCF of pipeline-quality natural gas (1.037 MMBtu/MCF)
 
 const SCEN = ['s0','s1','s2','s3','s4'];                // no-sale rate-table column by operational level
 const BESS_BY_OP = [0,0,10,25,25];                      // BESS size (MW) by operational level
@@ -511,9 +594,10 @@ function opLevel(){
 const salePriceMWh = () => S.salePrice * 10;
 // excess-sales benefit ($/MWh) = spilled wind (MWh) × sale price ($/MWh) ÷ system energy (MWh).
 // Independent of fuel price and BESS cost; validated against the workbook's full-stack sale column at $75/MWh (7.5 ¢/kWh).
+const deltaKey = () => S.delta ? '36' : '0';
 function saleBenefit(opl){
   if(!S.sell) return 0;
-  const g = GEN[S.lm][String(S.cap)][String(opl)];
+  const g = GEN[S.lm][String(S.cap)][deltaKey()][String(opl)];
   return g.curtail * salePriceMWh() / g.loadMWh;
 }
 
@@ -535,17 +619,17 @@ const OILX=[6,10,20,25,30,40,50,52];            // x-points for the fuel-price c
 function rateKey(){ return S.bessFree ? '0' : '12.32'; }
 // no-sale impact $/MWh for an operational level at current LM6000 case / cap / oil / BESS-cost setting
 function impactAt(opl, oil){
-  const cell = DATA[S.lm][rateKey()][String(S.cap)];
+  const cell = DATA[S.lm][rateKey()][String(S.cap)][deltaKey()];
   return interp(cell.oil, cell[SCEN[opl]], oil);
 }
 // net impact $/MWh including the excess-sales benefit (the headline figure)
 function netImpact(opl, oil){ return impactAt(opl, oil) - saleBenefit(opl); }
 const toCents = v => -v/10;        // $/MWh -> ¢/kWh reduction (positive = savings)
 
-// dispatch mix for an operational level (selling excess doesn't change energy served to GVEA load)
-function genAt(opl){ return GEN[S.lm][String(S.cap)][String(opl)]; }
-// current system (no Shovel Creek, no enablers) for the selected LM6000 case
-function baseline(){ return GEN[S.lm]['0']['0']; }
+// dispatch mix for an operational level (Delta is a scenario dimension via deltaKey)
+function genAt(opl){ return GEN[S.lm][String(S.cap)][deltaKey()][String(opl)]; }
+// current system (no Shovel Creek, no Delta, no enablers) for the selected LM6000 case
+function baseline(){ return GEN[S.lm]['0']['0']['0']; }
 // total liquid-fuel gallons from a gen record
 function gallons(g){
   return g.oilBtu*1e6/BTU_PER_GAL.diesel
@@ -553,22 +637,18 @@ function gallons(g){
        + g.lsrBtu*1e6/BTU_PER_GAL.lsr;
 }
 const galDisplaced = opl => gallons(baseline()) - gallons(genAt(opl)); // gal/yr vs current system
-
-// ---- Delta Wind overlay (full enabler complement + new-LM6000 base only) ----
-// When Delta is on, results = Shovel Creek + 36 MW Delta together, vs today's system.
-function deltaSaleBenefit(){
-  if(!S.sell) return 0;
-  const g=DELTA_GEN[String(S.cap)];
-  return g.curtail * salePriceMWh() / g.loadMWh;
+// annual CO2e (metric tons) from a gen record: liquid fuels use modeled fuel Btu; coal uses a typical heat rate
+function co2eTons(g){
+  const kg = g.oilBtu*CO2_KG_PER_MMBTU.diesel
+           + g.napBtu*CO2_KG_PER_MMBTU.naphtha
+           + g.lsrBtu*CO2_KG_PER_MMBTU.lsr
+           + g.coal*COAL_HR_MMBTU_PER_MWH*CO2_KG_PER_MMBTU.coal;
+  return kg/1000;
 }
-function deltaNet(oil){
-  const cell=DELTA_RATE[rateKey()][String(S.cap)];
-  return interp(cell.oil, cell.d, oil) - deltaSaleBenefit();
-}
-// active result = Delta overlay when on, otherwise the normal Shovel-only path
-function netImpactActive(oil){ return S.delta ? deltaNet(oil) : netImpact(opLevel(), oil); }
-function genActive(){ return S.delta ? DELTA_GEN[String(S.cap)] : genAt(opLevel()); }
-function galDisplacedActive(){ return gallons(baseline()) - gallons(genActive()); }
+// impact / net at an EXPLICIT Delta setting (for the ladder's decomposition)
+function impactAtD(opl, oil, dk){ const c=DATA[S.lm][rateKey()][String(S.cap)][dk]; return interp(c.oil, c[SCEN[opl]], oil); }
+function saleBenefitD(opl, dk){ if(!S.sell) return 0; const g=GEN[S.lm][String(S.cap)][dk][String(opl)]; return g.curtail*salePriceMWh()/g.loadMWh; }
+function netAtD(opl, oil, dk){ return impactAtD(opl,oil,dk) - saleBenefitD(opl,dk); }
 
 // ---- control sync ----  (sell is independent; the operational chain is self-consistent)
 function setFromSlider(pos){
@@ -584,11 +664,6 @@ function onCheck(id, val){
   if(id==='realtime'){ S.realtime=val; if(val){S.zhender=S.backupZ=S.npsc=true;} }
   if(id==='sell'){ S.sell=val; }   // commercial enabler — does not alter the operational stack
 }
-// Delta toggle: only the full enabler complement + new-LM6000 base case was modeled, so force them on
-function onDelta(val){
-  S.delta=val;
-  if(val){ S.lm='yes'; S.zhender=S.backupZ=S.npsc=S.realtime=S.sell=true; }
-}
 
 // ---- render ----
 function fmt(n,d=2){ return (n>=0?'':'–')+Math.abs(n).toFixed(d); }
@@ -602,8 +677,10 @@ function render(){
   const pos = BESS_BY_OP[opl]===0?0:(BESS_BY_OP[opl]===10?1:2);
   document.getElementById('bess').value = pos;
   document.getElementById('bessVal').textContent = BESS_BY_OP[opl]+' MW';
-  // oil + sale price
+  // oil + sale price (sync slider thumbs so the "Load this scenario" buttons move them)
+  document.getElementById('oil').value = S.oil;
   document.getElementById('oilVal').textContent = '$'+(Number.isInteger(S.oil)?S.oil:S.oil.toFixed(1))+' /MMBtu';
+  document.getElementById('salePrice').value = S.salePrice;
   document.getElementById('saleVal').textContent = (Number.isInteger(S.salePrice)?S.salePrice:S.salePrice.toFixed(1))+' ¢/kWh';
   document.getElementById('bessFree').checked = S.bessFree;
   document.getElementById('lm6000').checked = (S.lm==='yes');
@@ -613,14 +690,9 @@ function render(){
   cb('zhender',S.zhender); cb('backupZ',S.backupZ); cb('npsc',S.npsc); cb('realtime',S.realtime); cb('sell',S.sell);
   [['e_zhender',S.zhender],['e_backupZ',S.backupZ],['e_npsc',S.npsc],['e_realtime',S.realtime],['e_sell',S.sell]]
     .forEach(([id,v])=>document.getElementById(id).classList.toggle('active',v));
-  // Delta forces the full enabler complement + new-LM6000 base case → lock those controls
-  const lock=S.delta;
-  ['zhender','backupZ','npsc','realtime','sell','bess','lm6000'].forEach(id=>{ const el=document.getElementById(id); if(el) el.disabled=lock; });
-  document.querySelectorAll('#e_zhender,#e_backupZ,#e_npsc,#e_realtime,#e_sell').forEach(el=>el.classList.toggle('disabled',lock));
-  document.getElementById('deltaNote').classList.toggle('hidden', !lock);
 
-  // ---- numbers (Delta overlay when active) ----
-  const mwh = netImpactActive(S.oil);
+  // ---- numbers ----
+  const mwh = netImpact(opl, S.oil);
   const cents = toCents(mwh);
   const saving = cents>=0;
   const big=document.getElementById('bignum');
@@ -645,32 +717,49 @@ function render(){
 
   // metrics — savings shown as POSITIVE (bigger = better), matching the charts & hero
   const mwhSave=-mwh; // $/MWh avoided (positive = savings)
-  const g=genActive();
+  const g=genAt(opl);
   const yearSave = mwhSave * g.loadMWh;     // $/yr
-  const gal = galDisplacedActive();         // gallons/yr displaced (dispatch, not sales)
+  const gal = galDisplaced(opl);            // gallons/yr displaced (dispatch, not sales)
   const my=document.getElementById('m_year'); my.textContent=(yearSave>=0?'$':'–$')+Math.abs(yearSave/1e6).toFixed(1)+' M/yr'; my.className='m-v '+(saving?'pos':'neg');
   const mg=document.getElementById('m_gal'); mg.textContent=(gal/1e6).toFixed(1)+' M gal/yr'; mg.className='m-v pos';
-  const mr=document.getElementById('m_rate'); mr.textContent=fmt(cents,2)+' ¢/kWh'; mr.className='m-v '+(saving?'pos':'neg');
   const kwh=parseFloat(document.getElementById('kwh').value)||0;
-  const dollarsMo = cents*kwh/100; // ¢ -> $ saved per month
-  const mh=document.getElementById('m_home'); mh.textContent=(dollarsMo>=0?'$':'–$')+Math.abs(dollarsMo).toFixed(2)+' /mo'; mh.className='m-v '+(saving?'pos':'neg');
+  const dollarsYr = cents*kwh*12/100; // ¢/kWh × kWh/mo × 12 -> $/yr for a typical home
+  const mh=document.getElementById('m_home'); mh.textContent=(dollarsYr>=0?'$':'–$')+Math.abs(dollarsYr).toFixed(0)+' /yr'; mh.className='m-v '+(saving?'pos':'neg');
+  // emissions reduced vs today's system (metric tons CO2e/yr) and % of GVEA's total
+  const co2Base=co2eTons(baseline()), co2Now=co2eTons(g);
+  const co2Cut=co2Base-co2Now, co2Pct=co2Base>0?co2Cut/co2Base*100:0;
+  const mc=document.getElementById('m_co2'); mc.textContent=(co2Cut>=0?'':'+')+(Math.round(Math.abs(co2Cut)/1000)*1000).toLocaleString('en-US')+' tons CO₂e/yr'; mc.className='m-v '+(co2Cut>=0?'pos':'neg');
+  document.getElementById('m_co2pct').textContent=(co2Cut>=0?'−':'+')+Math.abs(co2Pct).toFixed(0)+'%';
 
   drawPie(opl);
   drawLadder(opl);
   drawOil(opl);
   drawCompare();
+  drawOps(opl);
+  drawSouthcentral(opl);
 }
-window.onDelta = onDelta;
+
+function drawSouthcentral(opl){
+  const excessMWh = genAt(opl).curtail;                       // surplus Interior wind (spilled today) available to export
+  const gasMCF = excessMWh * 1000 * SC_HEATRATE / SC_BTU_PER_MCF; // MCF of gas that wind offsets in a CC plant
+  const gasBCF = gasMCF / 1e6;
+  const savings = gasMCF * S.lngPrice;                        // $ saved vs. buying that gas as imported LNG
+  document.getElementById('sc_mwh').textContent  = (excessMWh/1000).toFixed(0) + ' GWh/yr';
+  document.getElementById('sc_bcf').textContent  = gasBCF.toFixed(2) + ' BCF/yr';
+  document.getElementById('sc_save').textContent = '$' + (savings/1e6).toFixed(1) + ' M/yr';
+  document.getElementById('sc_lngVal').textContent = '$' + (Number.isInteger(S.lngPrice)?S.lngPrice:S.lngPrice.toFixed(1)) + ' /MCF';
+  document.getElementById('lngPrice').value = S.lngPrice;
+}
 
 // ---- charts ----
 function drawLadder(curOpl){
-  // operational rungs 0..4 (operational benefit only, no sale)…
-  const rungs = OP_LADDER.map((r,i)=>({lab:r.lab, sub:r.sub, val:toCents(impactAt(i,S.oil))}));
-  // …plus the commercial step on top, when excess sales are enabled
-  if(S.sell) rungs.push({lab:`+ Sell surplus wind (${S.salePrice}¢)`, sub:'commercial enabler', val:toCents(netImpact(curOpl,S.oil))});
-  // …plus the Delta Wind project, when included in the base case
-  if(S.delta) rungs.push({lab:`+ ${DELTA_MW} MW Delta Wind`, sub:'base-case addition', val:toCents(deltaNet(S.oil))});
-  const curRung = S.delta ? rungs.length-1 : (S.sell ? rungs.length-1 : curOpl);
+  // operational rungs 0..4 (Shovel-only operational benefit, no sale)…
+  const rungs = OP_LADDER.map((r,i)=>({lab:r.lab, sub:r.sub, val:toCents(impactAtD(i,S.oil,'0'))}));
+  // …plus the commercial step (Shovel-only + excess sales)
+  if(S.sell) rungs.push({lab:`+ Sell surplus wind (${S.salePrice}¢)`, sub:'commercial enabler', val:toCents(netAtD(curOpl,S.oil,'0'))});
+  // …plus the Delta Junction project, when included in the scenario
+  if(S.delta) rungs.push({lab:`+ ${DELTA_MW} MW Delta Junction`, sub:'wind-project addition', val:toCents(netAtD(curOpl,S.oil,'36'))});
+  const curRung = (S.delta || S.sell) ? rungs.length-1 : curOpl;
   const W=620,H=232, padL=190, padR=70, padT=8, padB=24;
   const n=rungs.length, plotW=W-padL-padR, rowH=(H-padT-padB)/n;
   const vals = rungs.map(r=>r.val);
@@ -700,7 +789,7 @@ function drawLadder(curOpl){
 
 function drawOil(curLvl){
   const W=620,H=250, padL=46, padR=18, padT=14, padB=34;
-  const pts = OILX.map(o=>({o, c:toCents(netImpactActive(o))}));
+  const pts = OILX.map(o=>({o, c:toCents(netImpact(curLvl,o))}));
   const xs=o=>padL+(o-OIL_MIN)/(OIL_MAX-OIL_MIN)*(W-padL-padR);
   const allc=pts.map(p=>p.c);
   let ymin=Math.min(0,...allc), ymax=Math.max(0,...allc);
@@ -739,7 +828,7 @@ function drawOil(curLvl){
   s+=`<line x1="${xs(38)}" y1="${padT}" x2="${xs(38)}" y2="${H-padB}" stroke="#d8932a" stroke-width="1" stroke-dasharray="4 3"/>`;
   s+=`<text x="${xs(38)+4}" y="${padT+10}" font-size="9.5" fill="#b87a18">GVEA 6/26</text>`;
   // current position marker
-  const cc=toCents(netImpactActive(S.oil));
+  const cc=toCents(netImpact(curLvl,S.oil));
   s+=`<circle cx="${xs(S.oil)}" cy="${ys(cc)}" r="6" fill="#fff" stroke="#0b5394" stroke-width="2.5"/>`;
   s+=`<text x="${xs(S.oil)}" y="${ys(cc)-12}" text-anchor="middle" font-size="11" font-weight="700" fill="#0b5394">${fmt(cc,2)}¢</text>`;
   s+=`</g>`;
@@ -759,7 +848,7 @@ function pieReset(){
   if(l) l.textContent=_pieDefault.lab;
 }
 function drawPie(lvl){
-  const g=genActive();
+  const g=genAt(lvl);
   const segs=FUELS.map(f=>({...f, v:g[f.k]})).filter(s=>s.v>0);
   const total=segs.reduce((a,s)=>a+s.v,0);
   const cx=100,cy=100,r=86;
@@ -798,9 +887,9 @@ function drawPie(lvl){
 // ---- exec comparison: current ops vs full enablers at 120 MW ----
 function drawCompare(){
   const W=880,H=260, padL=52,padR=20,padT=16,padB=42;
-  const cell=DATA[S.lm][rateKey()]['120'];
+  const cell=DATA[S.lm][rateKey()]['120']['0'];
   const oils=cell.oil;
-  const g4=GEN[S.lm]['120']['4']; const saleC4=g4.curtail*salePriceMWh()/g4.loadMWh; // full-stack sale benefit $/MWh
+  const g4=GEN[S.lm]['120']['0']['4']; const saleC4=g4.curtail*salePriceMWh()/g4.loadMWh; // full-stack sale benefit $/MWh
   const cur=OILX.map(o=>({o,c:toCents(interp(oils,cell.s0,o))}));            // current ops (L0, no sale)
   const full=OILX.map(o=>({o,c:toCents(interp(oils,cell.s4,o)-saleC4)}));    // full complement (ops + excess sales)
   const all=[...cur,...full].map(p=>p.c);
@@ -831,14 +920,39 @@ function drawCompare(){
   document.getElementById('chartCompare').innerHTML=s;
 }
 
+// generating units in display order (top = fast/regulation → bottom = baseload/imports); Aurora combines two blocks
+const OPS_ORDER = [
+  {u:['Zhender1'], nm:'Zehnder 1'},
+  {u:['Zhender2'], nm:'Zehnder 2'},
+  {u:['NPSC1'],    nm:'North Pole GT1'},
+  {u:['NPSC2'],    nm:'North Pole GT2'},
+  {u:['NPCC'],     nm:'North Pole Expansion Plant (LM6000 in combined cycle)'},
+  {u:['NPCC2'],    nm:'Proposed LM6000 in Combined Cycle'}
+];
+// ---- operational results: per-unit dispatch change vs today's system ----
+function drawOps(opl){
+  const g=genAt(opl).gens, b=baseline().gens;
+  const sum=(src,codes,i)=>codes.reduce((a,c)=>a+((src[c]||[0,0,0])[i]),0);
+  const rows=OPS_ORDER.map(e=>{
+    const o=sum(g,e.u,0), h=sum(g,e.u,1), st=sum(g,e.u,2), bo=sum(b,e.u,0), bh=sum(b,e.u,1), bst=sum(b,e.u,2);
+    return {nm:e.nm, o, h, st, dOut:o-bo, dHr:h-bh, dSt:st-bst};
+  });   // always show all listed units (incl. Proposed LM6000 even when 0 / not built)
+  const N=n=>Math.round(n).toLocaleString();
+  const dc=v=> v===0 ? '<span class="ops-d0">0</span>' : `<span class="ops-d ${v<0?'dn':'up'}">${v<0?'–':'+'}${N(Math.abs(v))}</span>`;
+  let h='<table class="ops-tbl"><thead><tr><th>Unit</th><th>Output<br>MWh</th><th>Δ</th><th>Hours<br>online</th><th>Δ</th><th>Starts</th><th>Δ</th></tr></thead><tbody>';
+  rows.forEach(r=>{ h+=`<tr><td class="u">${r.nm}</td><td>${N(r.o)}</td><td>${dc(r.dOut)}</td><td>${N(r.h)}</td><td>${dc(r.dHr)}</td><td>${N(r.st)}</td><td>${dc(r.dSt)}</td></tr>`; });
+  h+='</tbody></table>';
+  document.getElementById('opsTable').innerHTML=h;
+}
+
 // ---- one-time exec finding stats: 120 MW, all operational enablers + excess sales @ 10 ¢/kWh, PACE-funded
 //      BESS (no project cost), NO new LM6000, no Delta, historical-average $25/MMBtu fuel ----
 (function initFindings(){
-  const cell=DATA['no']['0']['120'];                        // no new LM6000, PACE-funded BESS (no project cost)
-  const g4=GEN['no']['120']['4']; const saleC4=g4.curtail*100/g4.loadMWh; // 10 ¢/kWh = $100/MWh
+  const cell=DATA['no']['0']['120']['0'];                   // no new LM6000, no Delta, PACE-funded BESS
+  const g4=GEN['no']['120']['0']['4']; const saleC4=g4.curtail*100/g4.loadMWh; // 10 ¢/kWh = $100/MWh
   const full=o=>interp(cell.oil,cell.s4,o)-saleC4;          // full complement = ops + excess sales @ 10 ¢/kWh
   const yr=(-full(25))*g4.loadMWh/1e6;                       // historical-average $25/MMBtu fuel
-  const gal=(gallons(GEN['no']['0']['0'])-gallons(GEN['no']['120']['4']))/1e6;
+  const gal=(gallons(GEN['no']['0']['0']['0'])-gallons(GEN['no']['120']['0']['4']))/1e6;
   // crossover fuel price where the full complement breaks even (reduction = 0)
   let cross=null;
   for(const [a,b] of [[10,20],[20,25],[25,30],[30,40],[40,50]]){
@@ -848,7 +962,7 @@ function drawCompare(){
   document.getElementById('f1stat').textContent='≈ $'+yr.toFixed(0)+' M/yr';
   document.getElementById('f3stat').textContent='≈ '+gal.toFixed(0)+' M gal/yr';
   if(cross!==null) document.getElementById('f2stat').textContent='saves below ≈ $'+cross.toFixed(0)+'/MMBtu';
-  const c68=DATA['no']['0']['68'], g68=GEN['no']['68']['4'], s68=g68.curtail*100/g68.loadMWh;  // smallest project
+  const c68=DATA['no']['0']['68']['0'], g68=GEN['no']['68']['0']['4'], s68=g68.curtail*100/g68.loadMWh;  // smallest project
   document.getElementById('f4stat').textContent='≈ '+fmt(-(interp(c68.oil,c68.s4,12)-s68)/10,1)+' ¢/kWh at $12';  // 68 MW at prior EIA forecast (~$12)
 })();
 
@@ -873,9 +987,10 @@ document.getElementById('bess').oninput=e=>{ setFromSlider(+e.target.value); ren
 });
 document.getElementById('oil').oninput=e=>{ S.oil=+e.target.value; render(); };
 document.getElementById('salePrice').oninput=e=>{ S.salePrice=+e.target.value; render(); };
+document.getElementById('lngPrice').oninput=e=>{ S.lngPrice=+e.target.value; render(); };
 document.getElementById('bessFree').onchange=e=>{ S.bessFree=e.target.checked; render(); };
 document.getElementById('lm6000').onchange=e=>{ S.lm=e.target.checked?'yes':'no'; render(); };
-document.getElementById('delta').onchange=e=>{ onDelta(e.target.checked); render(); };
+document.getElementById('delta').onchange=e=>{ S.delta=e.target.checked; render(); };
 document.getElementById('kwh').oninput=render;
 
 render();
